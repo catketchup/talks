@@ -1,0 +1,21 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hu and Okamoto(2002)]{Hu:2001kj}
+Wayne Hu and Takemi Okamoto.
+\newblock {Mass reconstruction with cmb polarization}.
+\newblock \emph{Astrophys. J.}, 574:\penalty0 566--574, 2002.
+\newblock \doi{10.1086/341110}.
+
+\bibitem[Ferraro and Hill(2018)]{Ferraro:2017fac}
+Simone Ferraro and J.~Colin Hill.
+\newblock {Bias to CMB Lensing Reconstruction from Temperature Anisotropies due
+  to Large-Scale Galaxy Motions}.
+\newblock \emph{Phys. Rev.}, D97\penalty0 (2):\penalty0 023512, 2018.
+\newblock \doi{10.1103/PhysRevD.97.023512}.
+
+\end{thebibliography}

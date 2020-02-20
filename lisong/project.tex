@@ -1,0 +1,687 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[secnumarabic, graphics,floatfix,nofootinbib,amsmath
+tightenlines,nobibnotes,aps,prl,12pt]{revtex4-1}
+
+\usepackage{mathtools}
+\usepackage{axodraw4j}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}
+\usepackage{amsmath,slashed}
+\usepackage{graphicx}
+\usepackage{bm}% bold math
+\usepackage[utf8]{inputenc}
+%\usepackage{feynman}
+\usepackage{feynmf}
+%\usepackage{feynmp}
+%\usepackage{feynmp-auto}%feynman diagram
+%\usepackage{feynmp-auto}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{circuitikz}
+\usepackage{braket}
+\usepackage{slashed}
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+\newcommand{\rig}{\rightarrow}
+\newcommand{\lrig}{\longrightarrow}
+\renewcommand{\d}{{\mathrm{d}}}
+\newcommand{\be}{\begin{eqnarray*}}
+\newcommand{\ee}{\end{eqnarray*}}
+\newcommand{\gl}[1]{(\ref{#1})}
+\newcommand{\ta}[2]{ \frac{ {\mathrm{d}} #1 } {{\mathrm{d}} #2}}
+\newcommand{\bee}{\begin{eqnarray}}
+\newcommand{\eee}{\end{eqnarray}}
+\newcommand{\beeq}{\begin{equation}}
+\newcommand{\eeeq}{\end{equation}}
+\newcommand{\gev}{{\rm{GeV}}}
+\newcommand{\GeV}{~GeV}
+\newcommand{\MET}{$\slashed{E}_T$~}
+\newcommand{\Tev}{{\rm{TeV}}}
+\newcommand{\fb}{{\rm{fb}}}
+\newcommand{\ifb}{{\rm{fb}}^{-1}}
+\newcommand{\pb}{{\rm{pb}}}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mr}{\mathrm}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\pt}{$p_{\rm{T}}$}
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\newcommand{\mn}{\mu\nu}
+\begin{document}
+
+%\preprint{APS/123-QED}
+
+\title{Radiative Corrections to Electroweak Theory}% Force line breaks with \\
+%\thanks{A footnote to the article title}%
+
+\author{Lisong Chen}
+\email[Email: ]{lic114@pitt.edu}
+
+\affiliation{Physics and Astronomy Department \\
+University of Pittsburgh, 
+Pittsburgh PA 15260 USA\\
+}
+\smallskip
+%{\email {\tt srrappoc@buffalo.edu, broozbah@buffalo.edu, mmschiav@buffalo.edu, ciaranwi@buffalo.edu}}
+
+
+\pacs{}
+ %Lines break automatically or can be forced with \\
+%\author{Second Author}%
+ 
+%\affiliation{%
+ %Authors' institution and/or address\\
+ %This line break forced with \textbackslash\textbackslash
+%}%
+
+%\collaboration{MUSO Collaboration}%\noaffiliation
+
+%\author{Charlie Author}
+ %\homepage{http://www.Second.institution.edu/~Charlie.Author}
+%\affiliation{
+ %Second institution and/or address\\
+ %This line break forced% with \\
+%}%
+%\affiliation{
+ %Third institution, the second for Charlie Author
+%}%
+%\author{Delta Author}
+%\affiliation{%
+% Authors' institution and/or address\\
+% This line break forced with \textbackslash\textbackslash
+%}%
+
+%\collaboration{CLEO Collaboration}%\noaffiliation
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+Precision tests play an important role in particle physics. The study of proton-proton collisions at the Large Hadron Collider (LHC), together with previous measurements from other experiments, in particular at the LEP, has allowed us to test the electroweak Standard Model to a unprecedented level of success. To achieve such accuracy, it is crucial to have reliable and precise prediction from theory. Hence, the calculations beyond leading order in perturbation theory become distinctly important. In this short paper, I intend to narrow this broad topic down to a specific calculation of the vacuum polarization of the W-boson propagator. I will first perform the calculation to one-loop order, then I will show how this relates to experimental measurements.
+%\begin{description}
+%\item[Usage]
+%Secondary publications and information retrieval purposes.
+%\item[PACS numbers]
+%May be entered using the \verb+\pacs{#1}+ command.
+%\item[Structure]
+%You may use the \texttt{description} environment to structure your abstract;
+%use the optional argument of the \verb+\item+ command to give the category of each item. 
+%\end{description}
+\end{abstract}
+
+\pacs{Valid PACS appear here}% PACS, the Physics and Astronomy
+                             % Classification Scheme.
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}The Need for High Precision}
+ Present-day and near-future high energy experiments allow us to test existing theories and look for the new physics beyond.  However,  leading-order predictions are inadequate for comparing to experimental results, making the calculation of radiative corrections very important. In past decades, Precision Tests of the Standard Model of particle physics, such as the top mass measurement at the Tevatron, existence of the Higgs boson, and Higgs boson decay in various channels at the LHC, have put forth the Standard Model as one of the most successful theoretical model in physics. There are many examples of the need to evaluate radiative corrections. The first example is known as the rapidity distribution of Z bosons at the Tevatron.
+\begin{figure}[h]
+\includegraphics[width=0.8\textwidth]{1.png}
+\caption{Rapidity distribution of Z bosons at the Tevatron versus quantum chromodynamics fixed order corrections at leading-order (LO), next-to-leading-order (NLO), and next-to-next-to-leading order (NNLO)\cite{Anastasiou:2003ds}.}
+\end{figure}
+Consider the rapidity distribution of Z boson at the Tevatron, shown in Fig.1.
+As one can see, Solely using the LO prediction to compare with data will lead to the consequence that one might conclude QCD is wrong.  But if one goes beyond LO and sum the large logarithmic terms ($\log{\frac{M_v}{ p_T }}$), where $p_T$ is the transverse momentum of the vector boson in final state. One can not only see the agreement between QCD and the Tevatron but also obtain a precise measurement of the vector boson mass. 
+
+A second example is one of the most famous and influential results of the indirect determination of the Higgs boson mass, known as the "blue-band" plots. It is a series of plots that illustrates the development of the Higgs mass constraints under precision measurements of EW precision measurements before the actual discovery of the Higgs Boson at the LHC in 2012.
+
+
+\begin{figure}[!ht]
+\includegraphics[width=\textwidth]{blueband.png}
+
+\caption{In this series of plots, $\Delta \chi^2=\chi_{min}^2(m_H}-\chi^2_{min}$,  is a function of $m_H$ that fitted using Z-pole results and measured $\Gamma_W$, $m_W$, and $m_t$. And The blue band is the theoretical uncertainty due to missing higher order corrections. The yellow vertical band is determined by direct search in experiments with $95\%$ confidence. The dashed curve represents the 5 light quarks contributions in hadronic vacuum polarization.\cite{ALEPH:2005ab}.}
+\end{figure}
+As one can see, the Higgs mass was cornered by high precision calculations of EW data ven before LEP- \RN{2}.
+These examples show that higher order corrections are not simply an issue of adding more smaller contributions into the picture. They help us understand the underlying physics in a better way, allows us to testify the validity of the known theory, and can also constraint the new physics to a remarkable level and tell us where to direct future experiments. Radiative corrections regime not only increased computing power, but often ingenuity in developing new techniques. In this article, I will discuss the radiative correction to the W boson mass, starting from the systematic renormalization of EW theory.
+
+
+
+\section{\label{sec:level1} Renormalization of Electroweak Tehory}
+\subsection{\label{sec:level2} The Standard Model of Particle Physics}
+
+Over the past decades, a framework of particle physics has been accepted as the Standard Model (SM) due to its tremendous success in describing the electroweak and strong interactions of elementary particles. It combines three major parts into one big picture: the Electroweak theory attributed to Glashow, Salam and Weinberg\cite{Glashow:1961tr}\cite{Weinberg:1967tq}, and Quantum Chromodynamics (QCD) and the Higgs Mechanism formulated by Higgs, Englert, and others\cite{Englert:1964et}\cite{Higgs:1964pj}. The entire Standard Model is constructed upon a theoretical framework called Quantum Field Theory (QFT), which uses field operators to create and annihilate particles. The SM is based on the principle of local gauge symmetry, i.e. the Lagrangian is invariant under the transformation of
+\begin{equation}
+SU(3)_C\times SU(2)_L\times U(1)_Y,
+\end{equation}
+where $SU(3)_C$ is the gauge group of color in QCD, the QFT of strong interaction. The $SU(2)_L\times U(1)_Y$ group is the symmetry group of the Electroweak interaction. When unifying the EW and electromagnetic (EM) interaction, Weinberg suggested to define an EM charge by using the Gell-Mann-Nishijima \cite{Nakano:1953zz}\cite{Nishijima:1955gxk}\cite{Gell-Mann:1956iqa}relation as follows,
+\begin{equation}
+Q=\frac{\tau_z+Y}{2},
+\end{equation}
+where $\tau_z$ is the generator of rotations around the z-axis in $SU(2)_L$ and Y is the charge of $U(1)_Y$ called hypercharge (not EM charge). Under the Higgs Mechanism, $SU(2)_L\times U(1)_Y$ spontaneously breaks down to the unbroken $U(1)_{EM}$ group which is the gauge group of Quantum Electrodynamics. As will be explained in more detail below, the gauge bosons $W^{\pm}$ and $Z$ of the $SU(2)_L\times U(1)_Y$ group gain mass through the interactions with the Higgs boson. At the same time, the Yukawa interactions with the Higgs field also generate the mass terms for the fermions (apart from neutrinos).  The dynamics of the SM arises from a Lagrangian, given by,
+\begin{equation}
+\mathcal{L}=\mathcal{L}_{QCD}+\mathcal{L}_{EW}+\mathcal{L}_{Higgs+Yukawa},
+\end{equation}
+where
+\begin{equation}
+\mathcal{L}_{QCD}=-\frac{1}{4}G^a_{\mu\nu}G^{\mu\nu}_a-i\bar{\psi}\gamma_{\mu}(\partial_{\mu}-ig_s\frac{t^a}{2}G^a_{\mu})\psi,
+\end{equation}
+\begin{equation}
+\mathcal{L}_{EW}=-\frac{1}{4}W_a^{\mu\nu}W^a_{\mu\nu}-\frac{1}{4}B^{\mu\nu}B_{\mu\nu}+i\bar{f}\fsl{D}f?
+\end{equation}
+\begin{equation}
+\mathcal{L}_{Higgs+Yukawa}=|D_{\mu}\phi|^2-V(\phi)-g\bar{f}f\phi?
+\end{equation}
+\begin{equation}
+D_{\mu}=\partial_{\mu}-ig_2\frac{\tau^a}{2}W^a_{\mu}-ig_1\frac{Y}{2}B^{\mu}.
+\end{equation}
+Introducing explicit mass terms for the $W^{\pm},Z$ in the Lagrangian breaks the electroweak symmetry. The Higgs Mechanism allows for the generation of $W^{\pm},Z$ masses by spontaneously breaking the symmetry. Since the electromagnetic interaction has an infinite range, i.e. the photon is massless, the symmetry group of the SM must be broken like the following,
+
+
+
+\begin{equation}
+SU(2)_L\times U(1)_Y\to U(1)_{EM}.
+\end{equation}
+This pattern of symmetry breaking determines the choice of the Higgs field and its potential. The part of the EW Lagrangian which includes the EW gauge fields reads 
+\begin{equation}
+\mathcal{L}_{EW(k)}=-\frac{1}{4}W_a^{\mu\nu}W^a_{\mu\nu}-\frac{1}{4}B^{\mu\nu}B_{\mu\nu},
+\end{equation}
+where $W_{\mu}^a$ and $B_{\mu}$ are the gauge fields of $SU(2)_L$ and $U(1)_Y$ respectively, and
+\begin{equation}
+W_{\mu\nu}^a=\partial_{\nu}W_{\mu}^a-\partial_{\mu}W^{a}_{\nu}+g_2\epsilon^{abc}W_{\mu}^bW_{\nu}^c,
+\end{equation}
+\begin{equation}
+B_{\mu\nu}=\partial_{\nu}B_{\mu}-\partial_{\mu}B_{\nu}.
+\end{equation}
+We introduce a complex scalar field which forms an $SU(2)_L$ doublet with $\tau_z=\pm 1,Y=1$:
+\begin{equation}
+\bf{\Phi}=\left(
+\begin{array}{c}
+ \phi ^+ \\
+ \phi ^0 \\
+\end{array}
+\right),
+\end{equation}
+and the potential of such a scalar field is given by
+\begin{equation}
+V(\bf{\Phi})=\mu^2|\Phi^{\dagger}\Phi|+\lambda(|\Phi^{\dagger}\Phi|)^2,\qquad \lambda >0,\quad \mu^2<0,
+\end{equation}
+which is a renormalizable $SU(2)_L$ gauge invariant potential. We can obtain the vacuum energy state $\Phi_0$ of this potential by demanding
+\begin{equation}
+\frac{\partial V}{\partial \Phi}\bigg\rvert_{\phi=\phi_0}=0
+\end{equation}
+Consider the  case where the potential V has minima at $\Phi_i=\upsilon_i\neq0$, i.e. the ground state (corresponding to the vacuum expectation value of the quantized system is not zero. And for small oscillations around the vacuum expectation we can write
+\beeq
+V(\Phi_i)=V(\upsilon_i)+\frac{1}{2}\frac{\partial^2 V}{\partial \Phi_i \partial \Phi_k}\bigg\rvert_{\Phi_i=\upsilon_i} (\Phi_i=\upsilon_i)(\Phi_i-\upsilon_k)+...
+\eeeq
+ where it becomes transparent that the coefficient of the second term are mass terms of the (shifted) fields $\Phi'=\Phi-\upsilon$. If we plug in our $V$, we would see that only the combination $\Phi'_0^{\dagger}+\Phi'_0$ becomes massive. And the remaining three Higgs field excitation modes are massless (Goldstone Modes).
+The form of the Higgs potential is shown in Fig \ref{11}.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.6\textwidth]{newhp.png}
+\caption{Higgs Potential\label{11}}
+\end{figure}
+
+
+
+The $SU(2)$ symmetry of the Higgs ground state is broken when choosing a specific vacuum state, e.g.
+\begin{equation}
+\langle \Phi_0 \rangle=\frac{1}{\sqrt{2}}\left(
+\begin{array}{c}
+ 0 \\
+\upsilon \\
+\end{array}
+\right),
+\end{equation}
+where $\upsilon=\sqrt{\frac{-\mu^2}{\lambda}}$ is the vacuum expectation value (VEV). We then can preserve the unbroken symmetry of $U(1)_{EM}$ by requiring
+\begin{equation}
+Q\Phi_0 =0,
+\end{equation}
+which is satisfied by the chosen quantum numbers for the Higgs field.
+To see how the complex scalar field generates massive gauge bosons, we first write down the Lagrangian for the Higgs field.
+\begin{equation}
+\mathcal{L}=(D^{\mu}\Phi)^\dagger(D_{\mu}\Phi)-V(\Phi),
+\end{equation}
+where
+\begin{equation}
+D_{\mu}=\partial_{\mu}-ig_2\frac{\tau^a}{2}W^a_{\mu}-ig_1\frac{Y}{2}B_{\mu}
+\end{equation}
+introduces the interactions of the Higgs field with the EW gauge bosons. Since there are three generators from $SU(2)$ and one from $U(1)$, we have four EW gauge bosons and accordingly four Higgs fields. Three of the Higgs fields are the Goldstone bosons of the broken symmetry and one will become the physical scalar particle--the Higgs boson $H$. Due to the fact that we have a local symmetry, we can perform independent gauge transformations at each point of spacetime. We can choose a unitary gauge such that at each point of spacetime, $\Phi$ lies along the z-axis of $SU(2)$, and we obtain
+\begin{equation}
+\Phi=\frac{1}{\sqrt{2}}\left(
+\begin{array}{c}
+ 0 \\
+\upsilon+h \\
+\end{array}
+\right),
+\end{equation}
+at every point. From Eq.18 we can interpret the kinetic term $(D_{\mu}\Phi)^2$ as 
+\begin{equation}
+\frac{1}{2}\left(
+\begin{array}{cc}
+ 0 & \upsilon+h \\
+\end{array}
+\right)(\frac{1}{2}g_2\tau \cdot W_{\mu}+\frac{1}{2}g_1B_{\mu})^2\left(
+\begin{array}{c}
+ 0 \\
+\upsilon+h \\
+\end{array}
+\right),
+\end{equation}
+defining four physical gauge fields as 
+\begin{align}
+W^{\pm}_{\mu}&=\frac{1}{\sqrt{2}}(W^1_{\mu}\mp iW^2_{\mu}),\\
+Z^{\mu}&=\frac{-g_1B_{\mu}+g_2W^3_{\mu}}{(g_2^2+g_1^2)^{1/2}}\equiv \cos \theta_W W^3_{\mu}-\sin \theta_W B_{\mu},\\
+A^{\mu}&=\frac{g_2B_{\mu}+g_1W^3_{\mu}}{(g_2^2+g_1^2)^{1/2}}\equiv \sin \theta_WW^3_{\mu}+\cos \theta_W B_{\mu},
+\end{align}
+where $\theta_W$ is so-called Weinberg mixing angle
+\begin{align}
+\frac{g_2}{(g_2^2+g_1^2)^{1/2}}&\equiv \cos \theta_W,\\
+\frac{g_1}{(g_2^2+g_1^2)^{1/2}}&\equiv \sin \theta_W,
+\end{align}
+
+one finds that the $W^{\pm}$ and $Z$ bosons have gained masses from the interaction with the Higgs field:
+\begin{align}
+M_W&=\frac{1}{2}g\upsilon,\\
+M_Z&=\frac{1}{2}\sqrt{(g_2^2+g_1^2)}\upsilon,\\
+\end{align}
+but the photon remains massless:
+\begin{equation}
+M_A=0.
+\end{equation}
+As a result of unification, the EM coupling strength can be related to $g_1, g_2$ as
+\begin{equation}
+e=g_2\cos \theta_W=g_1\sin \theta_W,
+\end{equation}
+and we can obtain the VEV and Higgs mass in terms of free parameters $\mu$ and $\lambda$ at the lowest order:
+\begin{align}
+\upsilon^2&=-\frac{\mu^2}{2\lambda}\equiv \frac{1}{\sqrt{2}G_F},\\
+M_h&=\sqrt{2\upsilon^2\lambda}.
+\end{align}
+The weak mixing angle is given by
+\beeq
+\sin^2\theta_W\equiv \frac{g_1^2}{g_2^2+g_1^2}=1-\frac{g_2^2}{g_2^2+g_1^2}=1-\frac{M_W^2}{M_Z^2},
+\eeeq
+and the Fermi constant $G_F$ can be written 
+\beeq
+G_F=\frac{\pi \alpha}{\sqrt{2}M_W^2 \sin^2{\theta_W}}
+\eeeq
+The ratio between neutral current and charged-current is 
+\beeq
+\rho=\frac{M_W^2}{M_Z^2\cos^2{\theta_W}},
+\eeeq
+which is exactly unity at tree-level.  Eq. (35) is used to solve for $M_W$ in practice. Using experimental values for $\alpha$, $G_F$, and $\sin^\theta_W$ to solve for $M_W$ and $M_Z$ at the lowest order precision, one obtains $M_W^{th}=77.57\pm 1.01GeV$ and $M_Z^{th}=88.39\pm0.81GeV$, which compares poorly to the experimental values $M_W^{exp}=80.19\pm0.32GeV$ and $M_Z^{exp}=91.176\pm0.021GeV$. This discrepancy emphasizes the importance of considering higher order corrections. 
+\subsection{\label{sec:level2} Electroweak Renormalization in One-loop}
+To evaulate one-loop corrections, renormalization procedure must be applied to the electroweak theory. First we introduce the multiplicative renormalization of the gauge fields:
+\beeq
+W_0^{\pm}&=Z_W^{1/2} W^{\pm}=(1+\frac{1}{2}\delta Z_W)W^{\pm},\\
+\left(
+\begin{array}{c}
+ Z_0 \\
+ A_0 \\
+\end{array}
+\right)&=\sqrt{Z_{\text{ij}}} \left(
+\begin{array}{c}
+ Z \\
+ A \\
+\end{array}
+\right)= \left(
+\begin{array}{cc}
+ \frac{\text{$\delta $Z}_{\text{ZZ}}}{2}+1 & \frac{\text{$\delta $Z}_{\text{ZA}}}{2} \\
+ \frac{\text{$\delta $Z}_{\text{AZ}}}{2} & \frac{\text{$\delta $Z}_{\text{AA}}}{2}+1 \\
+\end{array}\right)
+\left(
+\begin{array}{c}
+ Z \\
+ A \\
+\end{array}
+\right),
+\eeeq
+and also the fermion fields,
+\begin{align}
+\psi_{f,0}^L&=(Z_L^f)^{1/2}\psi_f^L=(1+\frac{1}{2}\delta Z_L^f)\psi_f^L,\\
+\psi_{f,0}^R&=(Z_R^f)^{1/2}\psi_f^R=(1+\frac{1}{2}\delta Z_R^f)\psi_f^R.
+\end{align}
+For the free parameters in Lagrangian, we write them as
+\beeq
+e_0=Z_e e=(1+\delta Z_e); M_{W0}^2=M_W^2+\delta M_W^2, \text{etc}
+\eeeq
+The next step is to generate all counterterms in the renormalized Lagrangian and obtain the relevant Feynman rules. Now we are ready to discuss the corrections to the vector boson propagator. We first consider the radiative corrections of the 1-PI W-propagator, then the $\gamma-Z$ mixing propagator and its renormalization. Finally, we will calculate the W-propagator with fermionic/Higgs one-loop corrections by fixing all undetermined counterterms in an on-shell renormalization scheme. 
+The Lagrangian terms relevant to our calculations:
+\begin{equation}
+\begin{split}
+\mathcal{L}_{2-pt}&= -(\partial_{\mu}W^+_{\nu})(\partial^{\mu} W^{-\nu})+M_W^2W_\mu^+W^{-\mu}\\
+                  &-\frac{1}{2} (\partial_{\mu}Z_{\nu})(\partial^{\mu} Z^{\nu})+ \frac{1}{2}M_Z^2Z_{\mu}Z^{\mu}-\frac{1}{2}(\partial_{\mu}A_{\nu})(\partial^{\mu} A^{\nu})\\
+                  &+\delta Z_W (-(\partial_{\mu}W^+_{\nu})(\partial^{\mu} W^{-\nu})+M_W^2W_\mu^+W^{-\mu})+\delta M_W^2W_\mu^+W^{-\mu}\\
+                  &+\delta Z_{ZZ}( -\frac{1}{2}(\partial_{\mu}Z_{\nu})(\partial^{\mu} Z^{\nu})+\frac{1}{2}M_Z^2Z_{\mu}Z^{\mu})+\delta M_Z^2 \frac{1}{2}Z_{\mu}Z^{\mu}\\
+                  &+\delta Z_{AZ}( -\frac{1}{2}(\partial_{\mu}A_{\nu})(\partial^{\mu} Z^{\nu}))\\
+                  &+\delta Z_{ZA}(-\frac{1}{2}(\partial_{\mu}Z_{\nu})(\partial^{\mu} Z^{\nu})+M_Z^2Z_{\mu}A^{\mu}).
+                  \end{split}
+\end{equation}
+At 1-loop order, one can write the 1-PI W-propagator as the follow,
+
+
+
+\beeq
+-i G_{\mu\nu}=\frac{-i g_{\mu\rho}}{k^2-M_W^2}(-i \Sigma_{\rho\sigma}(k^2))\frac{-i g_{\sigma\nu}}{k^2-M_W^2}
+\eeeq
+where $-i D_{\mu\nu}$ graphically is 
+\beeq
+\includegraphics[width=0.9\textwidth]{dyson.eps}
+\eeeq
+
+
+\\
+\\
+\\
+\\
+Decompose $\Sigma_{\rho\sigma}(k^2)$ into a transverse part and a longitudinal part 
+\beeq
+\Sigma_{\mn}=T_{\mu\nu}\Sigma^{WW}_1+L_{\mu\nu}\Sigma^{WW}_2=(g_{\mu\nu}-\frac{k_{\mu}k_{\nu}}{k^2})\Sigma^{WW}_1+\frac{k_{\mu}k_{\nu}}{k^2}\Sigma^{WW}_2.
+\eeeq
+Due to Slavnov-Taylor identities\cite{Slavnov:1972fg}\cite{article}\cite{tHooft:1971akt}, one can show that only the transverse component will contribute to physical quantities, and that the transverse component is uniquely determined by simply multiplying $g_{\mn}$ on both side of Eq. (44). Henceforth we use $\Sigma^{WW}(k^2)=\Sigma^{WW}_1$.
+If we inspect the Dyson resummation of the W-propagator, we will end up having 
+\beeq
+-i G_W=\frac{-i}{k^2-M_W^2+\Sigma^{WW}(k^2)}.
+\eeeq
+Note that the inverse of 1-PI sum-over W-propagator is
+\beeq
+G_{W}^{-1}=k^2-M_W^2+\Sigma^{WW}(k^2).
+\eeeq
+First, we notice that $\Sigma^{WW}(k^2)$ is complex:
+\beeq
+\Sigma^{WW}(k^2)=Re\Sigma^{WW}+i Im \Sigma^{WW}.
+\eeeq
+Hence, it shifts the original pole of the W-propagator from $k^2=M_W^2$ at tree level to somewhere distant from the real axis. Both the real and imaginary part of $\Sigma^{WW}(k^2)$ have physical meaning. For a fermionic loop with $k^2> (m_f+m_f')^2$, then the imaginary part features the following property
+\beeq
+Im \Sigma^{WW}(k^2=M_W^2)=M_W\Gamma_{W\to ff'},
+\eeeq
+where the $\Gamma_{W\to ff'}$ is the decay width of W, and one can connect this to the Breit-Wigner formula, 
+\beeq
+BW(k^2)=\frac{-1}{k^2-M_p^2+iM_p\Gamma},
+\eeeq
+and $M_p$ is defined as the physical mass.
+
+Hence, we see the pole gets shifted from $k^2=M_W^2$ to $k^2={M_W^p}^2-iM_W^p\Gamma_W\equiv \widetilde{M_W}^2$
+
+ The real part,  contains UV divergence which has to be regulated and renormalized. In dimensional regularization, the UV part is regulated to a term that is proportional to $1/\epsilon$  in $d=4-\epsilon$ space-time. But for the renormalization process, one actually has the freedom to absorb a finite part in addition to the divergence in the renormalization parameters. The location of the shifted pole is the physical mass of the particle. The new pole locates at 
+\begin{align}
+k^2 |_{pole}&=M_{W}^2-\delta M_W^2-\Sigma^{WW}|_{pole},\\
+&=M_W^p^2-iM_W^p\Gamma_W=\widetilde{M_W}^2,\\
+&=M_W^p^2-\delta M_W^2+Re\Sigma^{WW}(\widetilde{M_W}^2)+iM_W^p\Gamma_W.
+\end{align}
+One solves for the renormalization condition by requiring the pole of the propagator locates at the physical mass of W boson:
+\beeq
+\delta M_W^2=Re\Sigma^{WW}(\widetilde{M_W}^2)\sim Re\Sigma^{WW}({M_W^p}^2),
+\eeeq
+since $\Gamma_W/M_W$ is at the order of $\mathal{O(\alpha)}$.
+The counterterm for the W boson mass is determined by series expanding $\Sigma^{WW}(k^2)$ around the pole $k^2\sim \widetilde{M_W^2}$.
+and requiring the residue of the pole remains one. One can solve for the $\delta Z_W$ as follows:
+
+\beeq
+G^r_W=Z_W^{-1}G_{W0} &=\frac{1}{Z_W} \lim_{k^2\to M_W^p^2}\frac{1}{k^2-M_W^2+\Sigma^{WW}(k^2)},
+&=\frac{1}{Z_W}\frac{1}{k^2-M_W^p^2} \frac{1}{1+\frac{d\Sigma^{WW}}{dk^2}(M_W^p^2)}+\mathal{O}(k^2-M_W^p^2).\\
+\eeeq
+\beeq
+Z_W&=Re (1+\frac{d\Sigma^{WW}}{dk^2}(M_W^p^2}))=1+\delta Z_W\Rightarrow
+\delta Z_W&=-Re\frac{d\Sigma^{WW}}{dk^2}(M_W^p^2})
+\eeeq
+
+
+In renormalizing the Z-propagator, and $\gamma$-propagator, we might have $\gamma-Z$ mixing propagator beyond tree level diagram. Such a mixing effect is a consequence of introducing the Higgs mechanism that preserves the gauge invariant of the theory. One cannot treat the Z and $\gamma$ separately in EW radiative corrections. To deal with the renormalization of $\gamma-Z$ mixing propagator, we can first write down the inverse dressed $\gamma-Z$ propagator in terms of a symmetric matrix:
+\beeq
+\includegraphics[width=0.7\textwidth]{mixingfield.eps}
+\eeeq
+\beeq
+M=\left(
+\begin{array}{cc}
+ G^{\gamma \gamma } & G^{\text{$\gamma $Z}} \\
+ G^{\text{$\gamma $Z}} & G^{\text{ZZ}} \\
+\end{array}
+\right)
+\eeeq
+\beeq
+M^{-1}=\left(
+\begin{array}{cc}
+ k^2 \Sigma ^{\gamma \gamma }(k^2)+k^2 & k^2 \Sigma ^{\text{$\gamma $Z}}(k^2) \\
+ k^2 \Sigma ^{\text{$\gamma $Z}}(k^2) & k^2 \Sigma ^{\text{ZZ}}(k^2)+k^2-M_Z^2 \\
+\end{array}
+\right)
+\eeeq
+
+Then we simply invert the matrix and solve for all matrix elements in Eq. 57. One gets
+
+\beeq
+G_{\gamma\gamma}&=\frac{1}{k^2+\Sigma^{\gamma\gamma}(k^2)-\frac{\Sigma^{\gamma Z}^2(k^2)}{k^2-M_Z^2+\Sigma^{ZZ}(k^2)}}\sim\frac{1}{k^2+\Sigma^{\gamma\gamma}(k^2)},
+\eeeq
+\beeq
+G_{\gamma Z}         &=\frac{-\Sigma^{\gamma Z}(k^2)}{(k^2+\Sigma^{\gamma\gamma}(k^2))(k^2-M_Z^2+\Sigma^{ZZ}(k^2))-\Sigma^{\gamma Z}^2(k^2)}\sim\frac{-\Sigma^{\gamma Z}(k^2)}{k^2(k^2-M_Z^2)},
+\eeeq
+\beeq
+G_{ZZ}                  &=\frac{1}{k^2-M_Z^2+\Sigma^{ZZ}(k^2)-\frac{\Sigma^{\gamma Z}^2(k^2)}{k^2+\Sigma^{\gamma\gamma}(k^2)}}\sim\frac{1}{k^2-M_Z^2+\Sigma^{ZZ}(k^2)},
+\eeeq
+
+as the full dressed propagator at the one-loop order. For the non-mixing Z-propagator and $\gamma$-propagator, we determine all the relevant counterterms by following the same procedure as for W-propagator. One obtain
+\beeq
+\delta M_Z^2=Re\Sigma_{ZZ}(M_Z^2)}, \quad \delta Z_{ZZ}=-Re\frac{d\Sigma_{ZZ}}{dk^2}(M_Z^2)},
+\eeeq
+\beeq
+\delta Z_{AA}=-\frac{d\Sigma_{\gamma\gamma}}{dk^2}(0).
+\eeeq
+To renormalize the mixed propagator, we must guarantee that the $\gamma$-propagator or Z-propagator decouple when $k^2=0$ or $k^2=\tilde{M}^2_Z\sim M_Z^2$. That is, the matrix $M$ is diagonal at both poles, and the mixing amplitude becomes zero. Hence, one will get
+\be
+Re{\Sigma_{ren}}^{\gamma Z}(0)=0 \implies &\delta Z_{ZA}=\frac{2\Sigma^{\gamma Z}(0)}{M_Z^2},\\
+Re{\Sigma_{ren}}^{\gamma Z}(M_Z^2)=0 \implies &\delta Z_{AZ}=-2Re{\Sigma^{\gamma Z}(M_Z^2)}/M_Z^2,\\
+\ee
+
+and for charge renormalization,  the Ward identity implies
+\beeq
+\delta Z_e=\frac{1}{2}\frac{d\Sigma^{AA}}{d k^2}(0)-\frac{\sin{\theta_W}}{\cos{\theta_W}}\Sigma^{\gamma Z}(0)/M_Z^2,
+\eeeq
+so $\delta Z_e$ is independent of the fermion current which implies charge universality.\\
+
+Perturbative predictions are scheme dependent since we can only obtain the approximation by truncating the perturbation series. Different choices of input parameters can be viewed as different schemes in EW theory. Choices of input parameters of EW theory that are frequently used in practice are as follows.
+\\
+The first choice uses the physical particle mass and the universal fine structure constant $\alpha$, known as a QED-like on-shell scheme or $\alpha$-scheme.
+\beeq
+\{\alpha, M_W, M_Z, m_f, m_H\}.
+\eeeq
+ In this scheme, one can easily separate the QED part from the electroweak radiative corrections. This scheme might be adopted where the dominant corrections are coming from QED, such as large soft photon emission. 
+ 
+ Another convenient choice is taking the G-Fermi constant $G_{\mu}$ instead of $\alpha$, since we can measure $G_{\mu}$ to a very precise level via muon decay experiment:
+ \beeq
+ \{G_{\mu}, M_W, M_Z, m_f, m_H\}.
+ \eeeq
+ However, these two choices both requires very precise knowledge of the vector boson masses of the W and Z, and the mass of the W will not be precisely measured until LEP- \RN{2},
+for another set of input parameters that is widely used in obtaining radiative corrections is
+\beeq
+ \{G_{\mu}, \alpha, M_Z, m_f, m_H\},
+ \eeeq
+where $M_Z$ is determined from LEP-\RN{1}. 
+
+Theoretically, if we calculate our radiative corrections to higher order, those physical observables should not depend on our renormalization schemes ( here referred as the choice of input parameters). This is manifested by renormalization group equations. However, obtaining corrections at given order makes our observables scheme-dependent and yet this is the major uncertainty of theory prediction. One way of alleviating this issue is to estimate missing higher order terms by resumming logarithmic terms. 
+
+In Eq. 35 and Eq. 36, we obtain the relations between the weak mixing angle $\theta_W$ and W, Z boson mass at tree level. If we use these relations to get the theoretical output of, for instance, the W mass, we will see a significant discrepancy, and we have argued such a discrepancy can be significantly reduced by higher order radiative corrections. To make those correction handy in calculations, we introduce a new gauge-invariant parameter $\Delta r$ in the following way:
+
+\beeq
+M_W^2=\frac{M_Z^2}{2}(1+\sqrt{1-\frac{\sqrt{8} \pi \alpha (1+\Delta r)}{G_F M_Z^2}}),
+\eeeq
+where the $\Delta r$ is a finite combination of loop diagrams and counterterms. One can further parameterize $\Delta r$ into
+\beeq
+\Delta r=\Delta \alpha- \cot^2{\theta_W}\Delta\rho+\Delta r_{rem},
+\eeeq
+where
+\beeq
+\Delta \rho=\frac{G_{N.C.}}{G_{C.C.}}-1.
+\eeeq
+The electroweak corrections to the W mass can be absorbed into the $\Delta \alpha$, $\Delta \rho$,  and $\Delta r_{rem}$ which are taken as the remaining part of $\Delta r$. Here, we parameterize $\Delta r$ in terms of $\{G_{\mu}, \alpha, M_Z, m_f, m_H\}$. Now we are going to calculate $\Delta r$.
+
+
+\section{\label{sec:level1} Vacuum Polarization to W-boson}
+
+\subsection{\label{sec:level2} Fermionic Vacuum Polarization of the W-boson}
+
+Consider the vacuum polarization of the W-boson. We can categorize the radiative corrections into bosonic corrections and fermionic corrections. We first discuss the fermionic loops, since the fermionic contributions dominate and the bosonic corrections are smaller by one order of magnitude. We categorize fermions into three groups: heavy quark corrections, light quark corrections, and leptonic corrections.
+
+\beeq
+\Sigma^{WW}_{\mn}=\includegraphics[width=0.9\textwidth]{wb.eps}
+\eeeq
+
+Using FeynArts+FeynCalc\cite{Shtabovenko:2016olh}\cite{Hahn:2000kx}, we obtained the following expression for the transverse component of $\Sigma^{WW}$ under the approximation $m_f\to 0, (f\neq t)$ and $|k^2|\ll m_t^2$:
+\begin{equation}
+         \begin{split}
+\Sigma^{WW}(k^2)&= \frac{\alpha}{3\pi}\frac{1}{4\sin^2{\theta_W}}\sum_{(f,f')\neq(t,b)}N_c^f k^2[\Delta\log{\frac{|k^2|}{\mu^2}}+\frac{5}{3}+i\pi \Theta(k^2)]\\
+           &+\frac{\alpha}{3\pi}\frac{1}{4\sin^2{\theta_W}}N_c^t[-\frac{3}{2}m_t^2(\Delta-\log{\frac{m_t^2}{\mu^2}}+\frac{1}{2})+k^2(\Delta -\log{\frac{m_t^2}{\mu^2}}+\frac{1}{3})]+\mathcal{O}(m_t^{-2}),\\
+     \end{split}
+\end{equation}
+where $\Delta=\frac{2}{4-D}-\gamma_E+\log{4\pi}$.
+Next, we insert this correction into the muon decay matrix element and add all the counterterms that contribute at this order to cancel all UV divergences:
+\beeq
+\begin{split}
+&\includegraphics[width=\textwidth]{muondecay.eps}\\
+&=\mathcal{M}_0+\mathcal{M}_0 \frac{\Sigma^{WW}(0)}{M_W^2}-\mathcal{M}_0[\delta Z_W+\frac{\delta M_W^2}{M_W^2}]+2\cdot \mathcal{M}_0[\frac{1}{2}\delta Z_W+\delta Z_e+\frac{\cos^2{\theta_W}}{2\sin^2{\theta_W}}(\frac{\delta M_W^2}{M_W^2}-\frac{\delta M_Z^2}{M_Z^2})]\\
+&=\mathcal{M}_0(1+\frac{\Sigma^{WW}(0)}{M_W^2}-\delta Z_W-\frac{\delta M_W^2}{M_W^2}+2\delta Z_e+\frac{\cos^2{\theta_W}}{\sin^2{\theta_W}}(\frac{\delta M_W^2}{M_W^2}-\frac{\delta M_Z^2}{M_Z^2})+\delta Z_W)\\
+&=\mathcal{M}_0(1+\Delta r_{ferm})
+\end{split}
+
+\eeeq
+Here we are taking the limit that $k^2\ll M_W^2$. As one can see, to fully renormalize W-propagator, it is inadequate to include only the W-propagator's counterterm. Using the renormalization conditions we have obtained from last section, we are able to rewrite our $\Delta r_{ferm}$ in terms of
+\beeq
+\begin{split}
+\Delta r_{ferm}&=[\frac{\Sigma^{WW}(0)}{M_W^2}-\frac{\delta M_W^2}{M_W^2}+2\delta Z_e+\frac{\sin^2{\theta_W}}{\cos^2{\theta_W}}(\frac{\delta M_W^2}{M_W^2}-\frac{\delta M_Z^2}{M_Z^2})]\\
+                       &=[\frac{\Sigma^{WW}(0)-Re\{\Sigma^{WW}(M_W^2)\}}{M_W^2}+\frac{d\Sigma^{\gamma\gamma}(0)}{dk^2}+2\frac{\sin{\theta_W}}{\cos{\theta_W}}\frac{\Sigma^{\gamma Z}(0)}{M_Z^2}+\\
+                       &+\frac{\sin^2{\theta_W}}{\cos^2{\theta_W}} Re\{\frac{\Sigma^{WW}(M_W^2)}{M_W^2}-\frac{\Sigma^{ZZ}(M_Z^2)}{M_Z^2}\}].
+\end{split}
+\eeeq
+
+We have to evaluate all EW 1-PI propagators at one-loop level. Similar to what we have done for W-propagator, FeynArts+FeynCalc can take care of this, and we get 
+\beeq
+\Sigma^{WW}(0)=\frac{\alpha}{3 \pi}\cdot \frac{1}{4\sin^2{\theta_W}}N_c^t(-\frac{3}{2}m_t^2(\Delta-\log{\frac{m_t^2}{\mu^2}}+\frac{1}{2}))+...,
+\eeeq
+\beeq
+\begin{split}
+Re\{\Sigma^{WW}(M_W^2)\}&=\Sigma^{WW}(0)+\frac{\alpha}{3 \pi}\frac{1}{4\sin^2{\theta_W}}\sum_{(f,f')\neq (t,b)}N_c^fM_W^2(\Delta -\log{\frac{M_W^2}{\mu^2}}+\frac{5}{3})\\
+&+\frac{\alpha}{3 \pi}\frac{1}{4\sin^2{\theta_W}}\cdot N_c^tm_t^2(\Delta-\log{\frac{m_t^2}{\mu^2}}+\frac{1}{3})+...
+\end{split}
+\eeeq
+
+\beeq
+\begin{split}
+Re\{\Sigma^{ZZ}(M_Z^2)\}&=\frac{\alpha}{3\pi}\sum_{f\neq t} N_c^f(V_f^2+A_f^2)M_Z^2(\Delta-\log{\frac{M_Z^2}{\mu^2}}+\frac{5}{3})\\
+                                        &+\frac{\alpha}{3 \pi}N_c^t[(V_t^2+A_t^2)M_Z^2(\Delta -\log{\frac{m_t^2}{\mu^2}})-A_t^2M_Z^2-6A_t^2m_t^2(\Delta-\log{\frac{m_t^2}{\mu^2}})],\\
+\end{split}
+\eeeq
+\beeq
+\frac{d\Sigma^{\gamma \gamma}(0)}{dk^2}=\frac{\alpha}{3 \pi}\sum_f N_c^f Q_f^2(\Delta-\log{\frac{m_f^2}{\mu^2}}),
+\eeeq
+under the approximation that $m_{f\neq t}=0$ and $M_{Z,W}\ll m_t$. Fortunately, the one-loop mixing term $\Sigma^{\gamma Z}$ is exactly at one of its pole $k^2=0$, hence we can just set it to zero by the definition that is given from last section. With some algebra we shall see the $\Delta r_{ferm}$ becomes
+\beeq
+\begin{split}
+ \Delta r_{ferm}&=\underbrace{\frac{\alpha}{3\pi}\sum_{f\neq t}N_c^f (\log{\frac{M_Z^2}{m_f^2}}-\frac{5}{3})}_\text{$\equiv \Delta\alpha(M_Z^2)$}\\
+ &+\underbrace{ \frac{\alpha}{3\pi} \sum_{f\neq (t,b)} N_c^f\frac{2s^2_W-1}{8s_W^4}\log{c_W^2}}_\text{$\equiv \Delta r^{rem}_{ferm}$}\\
+ &-\underbrace{ \frac{\alpha}{3\pi} N_c^t\frac{1}{8s^2_W}[\frac{3}{2}\frac{m_t^2}{M_Z^2}+(1-\frac{4}{3}s^2_W)\log{\frac{m_t^2}{M_Z^2}}+\frac{1}{2}-\frac{8}{9}s^2_W]}_\text{$\equiv \Delta \rho$}+\mathcal{O}(\frac{M_Z^2}{m_t^2}\log{\frac{m_t^2}{M_Z^2}}).\\
+\end{split}
+\eeeq
+setting our renormalization scale as $\mu^2=M_Z^2$. As one may see that $\Delta \alpha$ is the corrections due to QED. Here we exclude top quark contribution since $\Delta \alpha_{top}\sim \frac{\alpha}{3\pi}\frac{4}{15}\frac{M_Z^2}{m_t^2}\to 0$ as $m_t^2 \gg M_Z^2$.
+
+However, as $k^2<\Lambda_{QCD}$, corrections from the other five light quarks have non-perturbative contributions. We denote this portion as $\Delta \alpha^{(5)}_{hadron}$. 
+Help from experiment is needed. One way of dealing with this is by using dispersion relation to extract the hadronic contribution from the total cross section of hadron production in $e^+e^-$ annihilation measurement\cite{Cutkosky:1960sp}. As an outline of this technique, we first illustrate the key equation in this process. Let us define a complex-valued function with complex argument $F(s)$ with some assumptions that are automatically satisfied by our $\Sigma(k^2)$. The dispersion relation is written as 
+\begin{figure}[ht!]
+\center
+\includegraphics[width=0.8\textwidth]{dispersion.eps}
+\caption{Diagrammatic description of an intermediate hadronic process}
+\end{figure}
+\beeq
+F(q^2)=F(q_0^2)+\frac{q^2-q_0^2}{\pi}\int^{\infty}_{M^2}\frac{ds}{s-q_0^2}\frac{Im{F(s)}}{s-q^2-i\epsilon}
+\eeeq
+The contribution to $\Delta \alpha^{(5)}_{hadron}$ comes from
+\beeq
+Re{\frac{d\Sigma^{\gamma\gamma}(s)}{ds}}-\frac{d\Sigma^{\gamma\gamma}(0)}{ds}=\frac{s}{\pi} Re\int^{\infty}_{s_0} ds'\frac{Im{\Sigma^{\gamma\gamma}'(s')}}{s'(s'-s-i\epsilon)},
+\eeeq
+then by using the optical theorem one gets
+\beeq
+Im{\Sigma^{\gamma\gamma}'(s)=\frac{s}{e^2}\sigma_{tot}(e^{+}e^{-}\to\gamma^*\to hadrons)(s),
+\eeeq
+where $\sigma_{tot}$ is obtained from the cross section ratio between $e^+e^-\to\gamma^*\to hadrons$ and $e^+e^-\to \gamma^*\to \mu^+\mu^-$. 
+\beeq
+R(s)=\frac{\sigma_{tot}(e^+e^-\to \gamma^* \to hadrons)}{\sigma(e^+e^-\to \gamma^*\to  \mu^+\mu^-)},
+\eeeq
+Since the cross section in the denominator is well-known at tree level. Hence, one can write Eq. (81) as 
+\beeq
+\Delta\alpha^{(5)}_{hadrons}(M_Z^2)=-\frac{\alpha M_Z^2}{3\pi} Re\int^{\infty}_{4m_{\pi}^2}ds\frac{R(s)}{s(s-M_Z^2-i\epsilon)}
+\eeeq
+
+Solely measuring $R(s)$ up to $E_{cut}=40GeV$ to avoid the mixing field effect and perturbative QCD corrections, we obtain the numerical results for $\Delta\alpha_{hadron}^{(5)}$.
+\begin{equation}
+\Delta\alpha_{hadron}^{(5)}(s)=0.0282\pm0.0009+0.002980\{\log{s/s_0}+0.005696(s_0/s-1)\}
+\end{equation}
+
+with $\sqrt{s_0}=91.176GeV$.
+
+As for $\Delta \rho$, we see that the quadratic top mass is dominant and gets even enhanced by $\cot^2{\theta_W}$ as well. Overall, at one-loop level, the quadratic top mass term is the major contribution.
+
+\subsection{\label{sec:level2}Higgs corrections to W-boson}
+In the light fermion approximation, all bosonic corrections to the W-propagator come from the Higgs.
+\beeq
+\includegraphics[width=0.7\textwidth]{higgs.eps}
+\eeeq
+The leading $M_H$ contribution is logarithmic as 
+\beeq
+\Delta r_{Higgs}\simeq \frac{\alpha}{4\pi s_W^2}\frac{11}{12}\log{\frac{M_H^2}{M_Z^2}}, \qquad for\qquad M_H\gg M_Z.
+\eeeq
+The absence of a quadratic mass dependence is due to the vanishing fermion mass, which is also referred as the "screening theorem"\cite{PhysRevD.39.2758}.
+
+
+\section{\label{sec:level1} Applications}
+With the corrections determined, we use Eq. (79) and Eq. (87) to combine $\Delta r_{ferm}$ and $\Delta r_{Higgs}$ to find the relation among $M_H$, $M_W$, and $m_t$. Which shown in Fig 5 and 6.
+\begin{figure}[ht!]
+\center
+\includegraphics[width=0.5\textwidth]{lep2.png}
+\caption{Comparision between LEP experimental results and SM prediction at loop level.\cite{Schael:2013ita}}.
+\end{figure}
+Due to the quadratic top mass dependence, the relation between $M_W$ and $m_t$ is mostly linear in the SM at the one-loop level. As illustrated in these plots, each line depicts the mass of the W boson as a function of the mass of the top quark with a given mass of the Higgs, and the yellow bands represent the uncertainty due to other free parameters in theory. Based on the theoretical calculation, we expect the intersection locates somewhere inside of the yellow band. The new Tevatron and LEP-2 measurements indicate that the mass of W boson should be heavier than the previous measurement. For a given top quark mass, the heavier the W boson mass is, the lighter Higgs mass is, according to the plots.  One can see from this plot that the W boson mass, Higgs mass, and top mass altogether are highly constrainted into the intersection of ellipses and the yellow band. This plot shows how EWPC works with experimental data to illuminate the new physics. In the LHC era, we see the triumph of the SM.
+\begin{figure}[ht!]
+\center
+\includegraphics[width=0.9\textwidth]{atlasw.png}
+\caption{precision measurement of $M_W$  by ATLAS collaboration at the LHC .\cite{Aaboud:2017svj}}
+\end{figure}
+The diagonal line with $M_H=125.09\pm0.24GeV$ incorporated with other constraints, gives us the most precise W boson mass to date.
+
+
+
+\section{Outlook}
+We have seen how higher-order calculations help us study the theoretical model and look for new physics. So far, we have explained the big discrepancy between SM and experiments at leading order by going to a higher-order EW. But in the LHC era, this is not the end of the story of EWPC. The limit of theoretical uncertainty of $M_W^2$ to $\mathcal{O}(\alpha \alpha^2_s m_t^2)$\cite{Avdeev:1994db}\cite{Chetyrkin:1995ix}, $\mathcal{O}(\alpha \alpha^3_s m_t^2)$\cite{Schroder:2005db}\cite{Chetyrkin:2006bj}\cite{Boughezal:2006xk},  $\mathcal{O}(\alpha^2 \alpha_s m_t^4)$,  and even$\mathcal{O}(\alpha^3  m_t^6)$\cite{vanderBij:2000cg}\cite{Faisst:2003px}, and strategies were developed to re-sum certain reducible higher-order terms\cite{Consoli:1989pc}. Theoretical uncertainties due to missing higher order terms in EW perturbation theory are currently below the experimental uncertainties. Hence there is no critical demand for pushing EW to higher order at the moment.  The possible new lepton collider, such as the Circular Electron Positron Collider (CEPC),\cite{CEPCStudyGroup:2018ghi} and the Future Circular Collider (FCCee), would be able to increase the precision of electroweak fits up to an order of magnitude or even larger. Given this, one can see the benefit of putting effort on developing three-loop EW precision in the non-far future\cite{Erler:2019hds}.
+
+
+
+\bibliography{project}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

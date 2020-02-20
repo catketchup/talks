@@ -1,0 +1,93 @@
+#+STARTUP: indent
+
+Lensing reconstruction
+
+* What is CMB lensing?
+** explain cmb lensing
+
+** cmb lensing and T,E,B modes
+* Why lensing reconstruction?
+** premordial GW
+** dark matter
+** delensing
+** lensing cross-correlation
+* How lensing reconstruction?
+** lensing reconstruction
+estimators
+** lensing reconstruction on cut-sky
+** lensing reconstruction on full-sly
+*** show work
+*** future plan on lensing reconstruction
+* bias to cmb lensing reconstruction to reionization ksz
+** reionization
+** ksz
+** explain how reionization ksz affects lensing reconstruction
+
+* appendix
+
+
+GW, tensor mode, polarization, EB mode
+B mode sources
+cmb tempature, polarization fields, fourier space, off-diagnal terms
+noise model! noise unit!
+optical depth
+s/n 
+* questions
+- patchy tau
+- optial depth
+- reionization and ksz!!!
+- lensing potential and convergence
+- transfer functions
+
+- cosmological parameters understanding
+- lensing effect scale
+- lensing effect on TT, TB, EB, order
+- ell and angular scale and pixells
+- B mode other contributions
+- B mode other sources
+- vector modes
+
+- large scale, intermediate redshifts
+- newlens alm and lensing map
+
+
+- reionization ksz affects lensing reconstruction physical image
+- bias to lensing reconstruction from reionization ksz: temperature field and polarization field, scale?
+- noise, map noise, noise level, N_pix in paperlaptop
+- event horizon and gravitationl wave scales
+  
+* tips
+physical image!
+search key words
+order of magnitude!
+report
+make sure to understand every teminology in the report
+show simulations
+plans
+* words
+This applies to the simulated temperature full-sky map by now. My next setp would be improving its performance and applying polarization maps and then considering patchy maps.
+* committe meeting
+- lensing
+- future plan related to lensing?
+- full-sky and flat-sky comparison
+- lensing reconstruction
+** what?
+** why?
+** B mode topic
+premodial B mode and tensor mode
+** scalar-vector-tensor mode decomposition
+** gravitational waves
+** quadrupole and premordial B mode
+** Q,U and E,B picture
+- lecture notes in cosmology
+- search E-mode and B-mode
+- search stokes parameters and E-mode,B-mode in the "lectures notes in cosmology"
+** 
+* sources 
+- yilun's committee meeting report
+* report
+* Arthur
+show lensing maps, ksz maps
+explain ksz simulations
+add figures in the report
+ksz lensing effect limit
