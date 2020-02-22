@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,11 +11,30 @@ Wayne Hu and Takemi Okamoto.
 \newblock \emph{Astrophys. J.}, 574:\penalty0 566--574, 2002.
 \newblock \doi{10.1086/341110}.
 
+\bibitem[Lewis and Challinor(2006)]{Lewis:2006fu}
+Antony Lewis and Anthony Challinor.
+\newblock {Weak gravitational lensing of the CMB}.
+\newblock \emph{Phys. Rept.}, 429:\penalty0 1--65, 2006.
+\newblock \doi{10.1016/j.physrep.2006.03.002}.
+
 \bibitem[Ferraro and Hill(2018)]{Ferraro:2017fac}
 Simone Ferraro and J.~Colin Hill.
 \newblock {Bias to CMB Lensing Reconstruction from Temperature Anisotropies due
   to Large-Scale Galaxy Motions}.
 \newblock \emph{Phys. Rev.}, D97\penalty0 (2):\penalty0 023512, 2018.
 \newblock \doi{10.1103/PhysRevD.97.023512}.
+
+\bibitem[Alvarez(2016)]{Alvarez:2015xzu}
+Marcelo~A. Alvarez.
+\newblock {The Kinetic Sunyaev–Zel’dovich Effect From Reionization:
+  Simulated Full-sky Maps at Arcminute Resolution}.
+\newblock \emph{Astrophys. J.}, 824\penalty0 (2):\penalty0 118, 2016.
+\newblock \doi{10.3847/0004-637X/824/2/118}.
+
+\bibitem[Smith and Ferraro(2017)]{Smith:2016lnt}
+Kendrick~M. Smith and Simone Ferraro.
+\newblock {Detecting Patchy Reionization in the Cosmic Microwave Background}.
+\newblock \emph{Phys. Rev. Lett.}, 119\penalty0 (2):\penalty0 021301, 2017.
+\newblock \doi{10.1103/PhysRevLett.119.021301}.
 
 \end{thebibliography}

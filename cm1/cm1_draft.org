@@ -38,6 +38,9 @@ s/n
 - reionization and ksz!!!
 - lensing potential and convergence
 - transfer functions
+- matrix degree of freedom
+- scales! units!
+
 
 - cosmological parameters understanding
 - lensing effect scale
@@ -51,11 +54,12 @@ s/n
 - newlens alm and lensing map
 
 
+- trispectrum
 - reionization ksz affects lensing reconstruction physical image
 - bias to lensing reconstruction from reionization ksz: temperature field and polarization field, scale?
 - noise, map noise, noise level, N_pix in paperlaptop
 - event horizon and gravitationl wave scales
-  
+- show results and preliminary conclusion
 * tips
 physical image!
 search key words
