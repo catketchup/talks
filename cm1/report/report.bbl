@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -24,17 +24,25 @@ Simone Ferraro and J.~Colin Hill.
 \newblock \emph{Phys. Rev.}, D97\penalty0 (2):\penalty0 023512, 2018.
 \newblock \doi{10.1103/PhysRevD.97.023512}.
 
+\bibitem[Smith and Ferraro(2017)]{Smith:2016lnt}
+Kendrick~M. Smith and Simone Ferraro.
+\newblock {Detecting Patchy Reionization in the Cosmic Microwave Background}.
+\newblock \emph{Phys. Rev. Lett.}, 119\penalty0 (2):\penalty0 021301, 2017.
+\newblock \doi{10.1103/PhysRevLett.119.021301}.
+
+\bibitem[Smith et~al.(2009)Smith, Hernandez-Monteagudo, and
+  Seljak]{Smith:2009pn}
+Robert~E. Smith, Carlos Hernandez-Monteagudo, and Uros Seljak.
+\newblock {Impact of Scale Dependent Bias and Nonlinear Structure Growth on the
+  ISW Effect: Angular Power Spectra}.
+\newblock \emph{Phys. Rev.}, D80:\penalty0 063528, 2009.
+\newblock \doi{10.1103/PhysRevD.80.063528}.
+
 \bibitem[Alvarez(2016)]{Alvarez:2015xzu}
 Marcelo~A. Alvarez.
 \newblock {The Kinetic Sunyaev–Zel’dovich Effect From Reionization:
   Simulated Full-sky Maps at Arcminute Resolution}.
 \newblock \emph{Astrophys. J.}, 824\penalty0 (2):\penalty0 118, 2016.
 \newblock \doi{10.3847/0004-637X/824/2/118}.
-
-\bibitem[Smith and Ferraro(2017)]{Smith:2016lnt}
-Kendrick~M. Smith and Simone Ferraro.
-\newblock {Detecting Patchy Reionization in the Cosmic Microwave Background}.
-\newblock \emph{Phys. Rev. Lett.}, 119\penalty0 (2):\penalty0 021301, 2017.
-\newblock \doi{10.1103/PhysRevLett.119.021301}.
 
 \end{thebibliography}
