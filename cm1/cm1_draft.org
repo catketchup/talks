@@ -60,6 +60,33 @@ s/n
 - noise, map noise, noise level, N_pix in paperlaptop
 - event horizon and gravitationl wave scales
 - show results and preliminary conclusion
+
+** 
+? how curved sky better than flat sky; compare between them? 
+? isotropic? unlensed CMB multipoles are assumed to be Gaussian and statistically isotropic(explain)
+? name of l and alm
+
+** 
+? code source
+? declining geometric kernel of CMB lensing at these high redshifs.
+
+? compton scattering and Thomson scattering: Thomson scattering is the elastic scattering of electromagnetic radiation by a free charged particle, as described by classical electromagnetism. It is the low-energy limit of Compton scattering: the particle's kinetic energy and photon frequency do not change as a result of the scattering. This limit is valid as long as the photon energy is much smaller than the mass energy of the particle: , or equivalently, if the wavelength of the light is much greater than the Compton wavelength of the particle.
+
+Reionization: At a redshift of about 10, hydrogen gets ionized again by the ultraviolet radiation of the first structures
+kSZ: 
+
+
+
+tSZ effect: CMB photons interact with electrons that have high energies due to their temperature
+kSZ effect 
+kSZ anisotropies: are produced in cosmological epochs during which there are large fluctuations in the electron density. ? (physical image)
+``kSZ'' is used to refer to any blackbody temperature fluctuation arising from bulk motion integrated along the line of sight, including the Doppler effect.
+
+? We refer to the Doppler effect as responsible for large-angle kSZ anisotropies.
+? bulk velocity
+? patchy reionization
+? (B+C+E)
+
 * tips
 physical image!
 search key words

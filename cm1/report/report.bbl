@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,65 @@ Antony Lewis and Anthony Challinor.
 \newblock \emph{Phys. Rept.}, 429:\penalty0 1--65, 2006.
 \newblock \doi{10.1016/j.physrep.2006.03.002}.
 
+\bibitem[Kamionkowski et~al.(1997)Kamionkowski, Kosowsky, and
+  Stebbins]{Kamionkowski:1996ks}
+Marc Kamionkowski, Arthur Kosowsky, and Albert Stebbins.
+\newblock {Statistics of cosmic microwave background polarization}.
+\newblock \emph{Phys. Rev.}, D55:\penalty0 7368--7388, 1997.
+\newblock \doi{10.1103/PhysRevD.55.7368}.
+
+\bibitem[Zaldarriaga and Seljak(1998)]{Zaldarriaga:1998ar}
+Matias Zaldarriaga and Uros Seljak.
+\newblock {Gravitational lensing effect on cosmic microwave background
+  polarization}.
+\newblock \emph{Phys. Rev.}, D58:\penalty0 023003, 1998.
+\newblock \doi{10.1103/PhysRevD.58.023003}.
+
+\bibitem[Hu(2000)]{Hu:2000ee}
+Wayne Hu.
+\newblock {Weak lensing of the CMB: A harmonic approach}.
+\newblock \emph{Phys. Rev.}, D62:\penalty0 043007, 2000.
+\newblock \doi{10.1103/PhysRevD.62.043007}.
+
+\bibitem[Okamoto and Hu(2003)]{Okamoto:2003zw}
+Takemi Okamoto and Wayne Hu.
+\newblock {CMB lensing reconstruction on the full sky}.
+\newblock \emph{Phys. Rev.}, D67:\penalty0 083002, 2003.
+\newblock \doi{10.1103/PhysRevD.67.083002}.
+
+\bibitem[Henderson et~al.(2016)]{Henderson:2015nzj}
+S.~W. Henderson et~al.
+\newblock {Advanced ACTPol Cryogenic Detector Arrays and Readout}.
+\newblock \emph{J. Low. Temp. Phys.}, 184\penalty0 (3-4):\penalty0 772--779,
+  2016.
+\newblock \doi{10.1007/s10909-016-1575-z}.
+
+\bibitem[Benson et~al.(2014)]{Benson:2014qhw}
+B.~A. Benson et~al.
+\newblock {SPT-3G: A Next-Generation Cosmic Microwave Background Polarization
+  Experiment on the South Pole Telescope}.
+\newblock \emph{Proc. SPIE Int. Soc. Opt. Eng.}, 9153:\penalty0 91531P, 2014.
+\newblock \doi{10.1117/12.2057305}.
+
+\bibitem[Ade et~al.(2019)]{Ade:2018sbj}
+Peter Ade et~al.
+\newblock {The Simons Observatory: Science goals and forecasts}.
+\newblock \emph{JCAP}, 1902:\penalty0 056, 2019.
+\newblock \doi{10.1088/1475-7516/2019/02/056}.
+
+\bibitem[Abazajian et~al.(2016)]{Abazajian:2016yjj}
+Kevork~N. Abazajian et~al.
+\newblock {CMB-S4 Science Book, First Edition}.
+\newblock 2016.
+
+\bibitem[Smith et~al.(2009)Smith, Hernandez-Monteagudo, and
+  Seljak]{Smith:2009pn}
+Robert~E. Smith, Carlos Hernandez-Monteagudo, and Uros Seljak.
+\newblock {Impact of Scale Dependent Bias and Nonlinear Structure Growth on the
+  ISW Effect: Angular Power Spectra}.
+\newblock \emph{Phys. Rev.}, D80:\penalty0 063528, 2009.
+\newblock \doi{10.1103/PhysRevD.80.063528}.
+
 \bibitem[Ferraro and Hill(2018)]{Ferraro:2017fac}
 Simone Ferraro and J.~Colin Hill.
 \newblock {Bias to CMB Lensing Reconstruction from Temperature Anisotropies due
@@ -30,19 +89,18 @@ Kendrick~M. Smith and Simone Ferraro.
 \newblock \emph{Phys. Rev. Lett.}, 119\penalty0 (2):\penalty0 021301, 2017.
 \newblock \doi{10.1103/PhysRevLett.119.021301}.
 
-\bibitem[Smith et~al.(2009)Smith, Hernandez-Monteagudo, and
-  Seljak]{Smith:2009pn}
-Robert~E. Smith, Carlos Hernandez-Monteagudo, and Uros Seljak.
-\newblock {Impact of Scale Dependent Bias and Nonlinear Structure Growth on the
-  ISW Effect: Angular Power Spectra}.
-\newblock \emph{Phys. Rev.}, D80:\penalty0 063528, 2009.
-\newblock \doi{10.1103/PhysRevD.80.063528}.
-
 \bibitem[Alvarez(2016)]{Alvarez:2015xzu}
 Marcelo~A. Alvarez.
 \newblock {The Kinetic Sunyaev–Zel’dovich Effect From Reionization:
   Simulated Full-sky Maps at Arcminute Resolution}.
 \newblock \emph{Astrophys. J.}, 824\penalty0 (2):\penalty0 118, 2016.
 \newblock \doi{10.3847/0004-637X/824/2/118}.
+
+\bibitem[Stein et~al.(2020)Stein, Alvarez, Bond, van Engelen, and
+  Battaglia]{Stein:2020its}
+George Stein, Marcelo~A. Alvarez, J.~Richard Bond, Alexander van Engelen, and
+  Nicholas Battaglia.
+\newblock {The Websky Extragalactic CMB Simulations}.
+\newblock 2020.
 
 \end{thebibliography}
