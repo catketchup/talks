@@ -5,17 +5,17 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Hu and Okamoto(2002)]{Hu:2001kj}
-Wayne Hu and Takemi Okamoto.
-\newblock {Mass reconstruction with cmb polarization}.
-\newblock \emph{Astrophys. J.}, 574:\penalty0 566--574, 2002.
-\newblock \doi{10.1086/341110}.
-
 \bibitem[Lewis and Challinor(2006)]{Lewis:2006fu}
 Antony Lewis and Anthony Challinor.
 \newblock {Weak gravitational lensing of the CMB}.
 \newblock \emph{Phys. Rept.}, 429:\penalty0 1--65, 2006.
 \newblock \doi{10.1016/j.physrep.2006.03.002}.
+
+\bibitem[Hu and Okamoto(2002)]{Hu:2001kj}
+Wayne Hu and Takemi Okamoto.
+\newblock {Mass reconstruction with cmb polarization}.
+\newblock \emph{Astrophys. J.}, 574:\penalty0 566--574, 2002.
+\newblock \doi{10.1086/341110}.
 
 \bibitem[Kamionkowski et~al.(1997)Kamionkowski, Kosowsky, and
   Stebbins]{Kamionkowski:1996ks}

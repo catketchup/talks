@@ -8,6 +8,10 @@ Repeated entry---line 95 of file references.bib
  : @article{Alvarez:2015xzu
  :                         ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 249 of file references.bib
+ : @article{Okamoto:2003zw
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in Abazajian:2016yjj
 Warning--empty journal in Stein:2020its
 You've used 15 entries,
@@ -51,4 +55,4 @@ warning$ -- 2
 while$ -- 43
 width$ -- 0
 write$ -- 224
-(There was 1 error message)
+(There were 2 error messages)

@@ -86,6 +86,39 @@ kSZ anisotropies: are produced in cosmological epochs during which there are lar
 ? bulk velocity
 ? patchy reionization
 ? (B+C+E)
+** 
+To lowest order (in both optical depth and velocity), the kSZ effect produced only temperature anisotropies, not polarization anisotropies. 
+
+late-time kSZ: are present in galaxies and clusters due to the non-linear growth of structure
+reionization kSZ: fluctuations in the electron density field are due to fluctuations in the ionization fraction, are also expected to be correlated with the matter density field and hence with CMB lensing. 
+
+? non-linear growth of structure
+? seperation of ``late-time'' ksz and ``reionization ksz''
+? addition of ``reionization ksz'' map and ``temperature'' map
+? how do I tell the difference between ``late-time'' kSZ and ``reionization'' kSZ?
+
+? model of reionization kSZ
+? CMB unlensed and lensed simulations
+? websky reionization kSZ simulation and late-time kSZ(Dr.Trac might ask about this)
+
+CMB-S3 and CMB-S4 lensing 
+for a Stage 4 CMB experiment
+Their results have neglected the kSZ signal from reionization. 
+kSZ sigunal due to fluctuations in the ionization fraction during reionization can bring a detectable bias(squeezed limit trispectrum)
+I am working on simulating the bias to lensing reconstruction from reionization kSZ effect. 
+
+
+As a member of both the Atacama Cosmology Telescope (ACT) and the
+Simons Observatory (SO), I am actively involved in the research and
+analysis projects in the collaborations. A short summary of each of my
+involvements is listed below.
+
+** 
+Future:
+So my work is mainly around lensing reconstruction.
+
+1.Studying the bias to polarization reconstruction.
+2.Primordial non-Gaussianity, collaborate with Yilun.
 
 * tips
 physical image!

@@ -50,89 +50,40 @@
 \label{sec:org8852578}
 
 
-Cosmic Microwave Background(CMB) photons are gravitationlly lensed by the large scale mass distribution. This effect is called CMB lensing. CMB temperature anisotropies(T) and polarization anisotropies(E,B) are distorted by CMB lensing. We can use deflection field or lensing potential to discribe CMB lensing\cite{Lewis:2006fu}. It is expected to amongst the most powerful cosmological tools for ongoing and upcoming CMB experiments which will help constrain neutrino mass, understand the properties of dark energy and find out premordial gravitationl waves. So it is important to reconstruct the CMB lensing according to the oberved CMB temperature and polarization anisotropies. 
-The process of reconstruct lensing potential is called lensing reconstruction.
+Cosmic Microwave Background(CMB) photons are gravitationlly lensed by the large scale mass distribution. This effect is called CMB lensing. CMB temperature anisotropies(T) and polarization anisotropies(E,B) are distorted by CMB lensing. We can use deflection field or lensing potential to discribe CMB lensing\cite{Lewis:2006fu}. It is expected to amongst the most powerful cosmological tools for ongoing and upcoming CMB experiments which will help find out premordial gravitationl waves, constrain cosmological parameters, constrain neutrino mass and understand the properties of dark energy and . So it is important to reconstruct the CMB lensing according to the oberved CMB temperature and polarization anisotropies. The process of reconstruct lensing potential is called CMB lensing reconstruction.
 
-There are several aspects where we see CMB lensing effects:
+There are two aspects where we can see CMB lensing effects:
 1.CMB lensing modulates CMB temperature and polarization power spectra(2 point power spectrum). Statistical anisotropy is induced.
 2.CMB lensing produces higher-order correlations between the multipole moments. Off-diagonal mode-coupling between map harmonics can be seen. The off-diagonal mode coupling is proportional to lensing potential.\cite{Hu:2001kj}
 
-To obtain lensing potential, we can take quadratic combinations of CMB fields and construct quadratic estimators with minimum variance\cite{Hu:2000ee}. On small angular scales, we are able to neglect the curvature of the sky and apply flat sky estimators\cite{Hu:2001kj}. Since lensing is most sensitive to the projected potential at \(L<10^2\) or several degrees on the sky, we need consider the curvature of the sky. In this study, 
+And for primordial gravitationl waves, CMB lensing can be an important source of confusion\cite{Lewis:2006fu}. Density perturbations in the linear regime generate only the so-called E-mode polarization\cite{Kamionkowski:1996ks}. Lensing converts E-mode polarization to B-mode polarization.\cite{Zaldarriaga:1998ar}. Gravitationl waves can also produce B-mode polarization\cite{Hu:2000ee}. Removing the lensing-generated B-mode is called delensing.
 
-CMB lensing offers a unique way to study the physics of the dar sector at large scale 
-And for primordial gravitationl waves, weak gravitationl lensing effects on CMB can be an important source of confusion\cite{Lewis:2006fu}. Density perturbations in the linear regime generate only the so-called E-mode polarization\cite{Kamionkowski:1996ks}. Lensing converts E-mode polarization to B-mode polarization.\cite{Zaldarriaga:1998ar}. Plus, gravitationl waves can also produce B-mode polarization\cite{Hu:2000ee}. Thus, it is important to reconstruct lensing potential
+To obtain lensing potential, we can take quadratic combinations of CMB fields and construct quadratic estimators with minimum variance\cite{Hu:2000ee}. On small angular scales \(L>10^2\), we are able to neglect the curvature of the sky and apply flat sky estimators\cite{Hu:2001kj}. Since lensing is most sensitive to the projected potential at \(L<10^2\) or several degrees on the sky, we need consider the curvature of the sky. In this study, we apply estimators for lensing potential on the curved sky provided by Ref\cite{Okamoto:2003zw}. We reconstruct lensing potential and get noise properties for the full sky. This work now only works for the full sky using TT and EB estimators. And its performance is still limited by now. 
 
+I am a member of both Advanced Atacama Cosmology Telescope(AdvACT) and Simons Obervatory(SO). This work is meant for improving the existing lensing reconstruction pipline in the both obervatories.
 
-The lensing reconstruction can help seperate premordial gravitationl waves(delensing) which can generate B-mode before the last scattering surface. It can also be used to help constrain cosmological parameters and lensing mass distribution. Thus, it is important to study weak gravitationl lensing of CMB.
+I am improving the performance of my code of CMB lensing reconstruction on the curved sky, trying to apply it to patchywork of CMB maps and implementing it into collaboration lensing reconstruction pipeline.
 
+I also expect to study delensing and primordial non-Gaussianity based on this work in the future.
 
-
- And it is necessary for its application in removing lensing gravitationl wave polarization across large regions of the sky.
-
-In this study, we apply the quadratic estimators of the lensing potential on the curved sky offered by Ref\cite{Okamoto:2003zw} and simulate the lensing reconstruction process based on these on the full sky. We reconstruct the lensing potential and get their noise properties. The work now only works for full sky and its performance is not ....  We are trying to improve its performance, convert this to a patchwork of maps and implement it in the collaboration lensing reconstruction pipeline.
-
-In the section, I will present how to treat consisely the effect of gravitationl lensing on CMB temperature and polarization maps by constructing the full sky quadratic estimators of lensing potential and their noise. And I will introduce the simulation of lensed I will give preliminary results of my calculation 
-
-Deriving the full sky minimum variance quadratic estimators of lensing potential from CMB temperature and polarization fields.
-
-My work of this part is mainly about:
-I am a member of both ACT and Simons
 
 
 \section{Bias to CMB Lensing Reconstruction from Temperature Anisotropies due to Reionization kSZ}
 \label{sec:org093d799}
 In this work, we are investigating a bias to CMB lensing reconstruction from temperature anisotropies due to the reionization kSZ effect(kinematic Sunyaev-Zel'dovich effect) based on simulation.
 
-There are several ongoing and upcoming experiments, including Advanced Atacama Cosmology Telescope(AdvACT)\cite{Henderson:2015nzj}, the South Pole Telescope-3G(SPT-3G)\cite{Benson:2014qhw}, the Simons Observatory\cite{Ade:2018sbj}, and CMB Stage-4(CMB-S4)\cite{Abazajian:2016yjj}. For these experiments, the CMB lensing power spectrum will be measured with signal-to-noise\((S/N)>100\). At this precision level, we are required to consider more about biases in CMB reconstruction. Most of the biases can be removed from primary CMB by a multifrequency component seperation methods, but they don't work for kSZ effect, since kSZ effect preserves blackbody of the CMB.\cite{Smith:2009pn}
+There are several ongoing and upcoming experiments, including Advanced Atacama Cosmology Telescope(AdvACT)\cite{Henderson:2015nzj}, the South Pole Telescope-3G(SPT-3G)\cite{Benson:2014qhw}, the Simons Observatory\cite{Ade:2018sbj}, and CMB Stage-4(CMB-S4)\cite{Abazajian:2016yjj}. For these experiments, the CMB lensing power spectrum will be measured with signal-to-noise\((S/N)>100\). At this precision level, we are required to consider more about biases in CMB reconstruction. Most of the biases can be removed from primary CMB by a multifrequency component seperation methods, but they don't work for kSZ effect, since kSZ effect preserves blackbody spectrum of the CMB.\cite{Smith:2009pn}
 
-kSZ effecty is the Doppler shift of CMB photons induced by Compton-scattering off moving electrons(bulk velocity).\cite{Ferraro:2017fac}. The kSZ signal has its own intrinsic non-Gaussianity and its correlation with CMB lensing field is non-zero.\cite{Smith:2016lnt}.
+kSZ effect is the Doppler shift of CMB photons induced by Compton-scattering off moving electrons(bulk velocity).\cite{Ferraro:2017fac}. The kSZ signal has its own intrinsic non-Gaussianity and its correlation with CMB lensing field is non-zero.\cite{Smith:2016lnt}.
 
-kSZ anisotropies can be produced when large fluctuation in electron density appears. There are two epochs when they can be produced: 1.a ``late-time'' contribution from redshifts\(0<z<6\) in which inhomogeneities are large due to gravitationl growth of structure 2. earlier during the epoch of reionization(from first stars, \(6<z<20\) when hydrogen gets ionized again by the ultraviolet radiation of the first structures and the fluctuation electron density are caused by the fluctuations in the ionization fraction.\cite{Ferraro:2017fac} \cite{Alvarez:2015xzu}. It is expected to be correlated with lensing field.
+kSZ anisotropies can be produced when large fluctuation in electron density appears. There are two epochs when they can be produced: 1.a ``late-time'' contribution from redshifts \(0<z<6\) in which inhomogeneities are large due to gravitationl growth of structure 2.earlier during the epoch of reionization(from first stars, \(6<z<20\)) when hydrogen gets ionized again by the ultraviolet radiation of the first structures and the fluctuation electron density are caused by the fluctuations in the ionization fraction.\cite{Ferraro:2017fac} \cite{Alvarez:2015xzu}. It is expected to be correlated with lensing field.
 
-Simone Ferraro and J. Colin Hill  have investigated the case of ``late time'' kSZ in \cite{Ferraro:2017fac}. Accordin to their results, the bias induced by ``late time'' kSZ to CMB lensing auto-power spectrum measurements can be as large as aproximately \(\%1\) \(\%6\), and \(\%8\) for Plank, CMB-S3, and CMB-S4, respectively, when using \(l_{max} = 4000\), and about half of that for \(l_{maxy} = 3000\). Thus, for CMB-S3 and CMB-S4 lensing measurements, the kSZ-induced bias cannot be neglected.
+Simone Ferraro and J. Colin Hill  have investigated the case of ``late time'' kSZ in \cite{Ferraro:2017fac}. Accordin to their results, the bias induced by ``late time'' kSZ to CMB lensing auto-power spectrum measurements can be as large as aproximately \(\%1\), \(\%6\), and \(\%8\) for Plank, CMB-S3, and CMB-S4, respectively, when using \(l_{max} = 4000\), and about half of that for \(l_{maxy} = 3000\). Thus, for CMB-S3 and CMB-S4 lensing measurements, the kSZ-induced bias cannot be neglected.
 
-For the case of reionization kSZ, it could also contribute at some level. We are trying to estimate reionization-induced bias to CMB lensing reconstruction from temperature anisotropies based on lensed temperature anisotropies simulations from Websky\cite{Stein:2020its} and reionization kSZ map from Ref\cite{Alvarez:2015xzu}. In this study, we apply flat-sky reconstruction pipeline to cutout patchy lensed temperature maps with reionization kSZ and without reionization kSZ with different noise levels, beam sizes and \(l_{max}\). We compare their reconstruction lensing auto-powerspectra and see how much bias the reionization kSZ induces.
+For the case of reionization kSZ, it could also contribute at some level. We are trying to estimate reionization-induced bias to CMB lensing reconstruction from temperature anisotropies based on lensed temperature anisotropies and reionization kSZ simulations from Websky\cite{Stein:2020its} and reionization kSZ map from Ref\cite{Alvarez:2015xzu}. In this study, we apply flat-sky reconstruction pipeline to cutout patchy lensed temperature maps with reionization kSZ and without reionization kSZ with different noise levels, beam sizes and \(l_{max}\). We compare their reconstruction lensing auto-powerspectra and see how much bias the reionization kSZ induces.
 
-There are still some 
+I am now simulating the bias and trying to understand the bias quantitatively. 
 
-To lowest order (in both optical depth and velocity), the kSZ effect produced only temperature anisotropies, not polarization anisotropies. 
-
-
-
-late-time kSZ: are present in galaxies and clusters due to the non-linear growth of structure
-reionization kSZ: fluctuations in the electron density field are due to fluctuations in the ionization fraction, are also expected to be correlated with the matter density field and hence with CMB lensing. 
-
-? non-linear growth of structure
-? seperation of ``late-time'' ksz and ``reionization ksz''
-? addition of ``reionization ksz'' map and ``temperature'' map
-? how do I tell the difference between ``late-time'' kSZ and ``reionization'' kSZ?
-
-? model of reionization kSZ
-? CMB unlensed and lensed simulations
-? websky reionization kSZ simulation and late-time kSZ(Dr.Trac might ask about this)
-
-CMB-S3 and CMB-S4 lensing 
-for a Stage 4 CMB experiment
-Their results have neglected the kSZ signal from reionization. 
-kSZ sigunal due to fluctuations in the ionization fraction during reionization can bring a detectable bias(squeezed limit trispectrum)
-I am working on simulating the bias to lensing reconstruction from reionization kSZ effect. 
-
-
-As a member of both the Atacama Cosmology Telescope (ACT) and the
-Simons Observatory (SO), I am actively involved in the research and
-analysis projects in the collaborations. A short summary of each of my
-involvements is listed below.
-
-
-Future
-
-One the other hand, I am simulating the bias; On the other hand, I am also trying to understand the bias quantitively. Also studying the reionization  ksz simulations give by ...;
-
-Future:
-So my work is mainly around lensing reconstruction.
-
-1.Studying the bias to polarization reconstruction.
-2.Primordial non-Gaussianity, collaborate with Yilun.
 
 
 \bibliography{references}
