@@ -122,3 +122,5 @@ show lensing maps, ksz maps
 explain ksz simulations
 add figures in the report
 ksz lensing effect limit
+* lecture
+Hello, 

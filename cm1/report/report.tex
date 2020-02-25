@@ -46,32 +46,28 @@
 %================== End of Header =========================
 \newcommand{\edit}[1]{\textcolor{red}{(#1)}}
 \vspace{-1.5cm}
-\section{Lensing reconstruction on the curved sky}
+\section{CMB Lensing reconstruction on the curved sky}
 \label{sec:org8852578}
 
 
-Cosmic Microwave Background(CMB) photons are gravitationlly lensed by the large scale mass distribution. We can use a first order perturbation to discribe this effect which is called weak gravitationl lensing of CMB.
-CMB temperature map(T) and polarization map(E,B) are distorted by 
-(what is gravitationl lensing)
-Weak gravitationl lensing for the microwave background anisotropies
-(dark matter)
-in the projected gravtional potential(delensing)
-(premodial gravitationl waves)
-(cross correlation with )
+Cosmic Microwave Background(CMB) photons are gravitationlly lensed by the large scale mass distribution. This effect is called CMB lensing. CMB temperature anisotropies(T) and polarization anisotropies(E,B) are distorted by CMB lensing. We can use deflection field or lensing potential to discribe CMB lensing\cite{Lewis:2006fu}. It is expected to amongst the most powerful cosmological tools for ongoing and upcoming CMB experiments which will help constrain neutrino mass, understand the properties of dark energy and find out premordial gravitationl waves. So it is important to reconstruct the CMB lensing according to the oberved CMB temperature and polarization anisotropies. 
+The process of reconstruct lensing potential is called lensing reconstruction.
 
-There are several aspects where we see weak gravitationl lensing effects on CMB.
-1.Weak gravitationl lensing modulates CMB temperature and polarization power spectra(2 point power spectrum). Statistical anisotropy is induced.
-2.Lensing of CMB fields produces higher-order correlations between the multipole moments. Off-diagonal mode-coupling between map harmonics can be seen. The off-diagonal mode coupling is proportional to lensing potential.\cite{Hu:2001kj}
+There are several aspects where we see CMB lensing effects:
+1.CMB lensing modulates CMB temperature and polarization power spectra(2 point power spectrum). Statistical anisotropy is induced.
+2.CMB lensing produces higher-order correlations between the multipole moments. Off-diagonal mode-coupling between map harmonics can be seen. The off-diagonal mode coupling is proportional to lensing potential.\cite{Hu:2001kj}
 
-Gravitational lensing of CMB offers a unique way to study the physics of the dar sector at large scale 
+To obtain lensing potential, we can take quadratic combinations of CMB fields and construct quadratic estimators with minimum variance\cite{Hu:2000ee}. On small angular scales, we are able to neglect the curvature of the sky and apply flat sky estimators\cite{Hu:2001kj}. Since lensing is most sensitive to the projected potential at \(L<10^2\) or several degrees on the sky, we need consider the curvature of the sky. In this study, 
+
+CMB lensing offers a unique way to study the physics of the dar sector at large scale 
 And for primordial gravitationl waves, weak gravitationl lensing effects on CMB can be an important source of confusion\cite{Lewis:2006fu}. Density perturbations in the linear regime generate only the so-called E-mode polarization\cite{Kamionkowski:1996ks}. Lensing converts E-mode polarization to B-mode polarization.\cite{Zaldarriaga:1998ar}. Plus, gravitationl waves can also produce B-mode polarization\cite{Hu:2000ee}. Thus, it is important to reconstruct lensing potential
 
 
 The lensing reconstruction can help seperate premordial gravitationl waves(delensing) which can generate B-mode before the last scattering surface. It can also be used to help constrain cosmological parameters and lensing mass distribution. Thus, it is important to study weak gravitationl lensing of CMB.
 
-To obtain projected gravitationl potential(lensing potential) and therefor the projected mass, we can take quadratic combinations of CMB fields. This process is called lensing reconstruction which is a story of measuring lensing. 
 
-Since lensing is most sensitive to the projected potential at \(L<10^2\) or several degrees on the sky, we need consider the curvature of the sky. And it is necessary for its application in removing lensing gravitationl wave polarization across large regions of the sky.
+
+ And it is necessary for its application in removing lensing gravitationl wave polarization across large regions of the sky.
 
 In this study, we apply the quadratic estimators of the lensing potential on the curved sky offered by Ref\cite{Okamoto:2003zw} and simulate the lensing reconstruction process based on these on the full sky. We reconstruct the lensing potential and get their noise properties. The work now only works for full sky and its performance is not ....  We are trying to improve its performance, convert this to a patchwork of maps and implement it in the collaboration lensing reconstruction pipeline.
 
