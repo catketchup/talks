@@ -49,12 +49,12 @@
 \section{Introduction to Cosmic Microwave Background(CMB)}
 \label{sec:org8852578}
 
-Anisotropies in the cosmic mircrowave background(CMB) radiation have provided a weath of information about cosmological model that describes the contents and evolution of the universe\cite{Staggs:2018gvf}. We extract multipoles from CMB temperature anisotropies(T) and polarization anisotropies(E,B) which traces the behaviour at 400 000 years of cosmic time, as well as from the signals imprinted at later times due to scattering from galaxy clusters, from the motion of electrons ionized, and from gravitationl lensing. FIG 1. shows the full sky temperature anisotropies from Planck(Satillite based).
+Anisotropies in the cosmic mircrowave background(CMB) radiation have provided a weath of information about cosmological model that describes the contents and evolution of the universe\cite{Staggs:2018gvf}. We extract multipoles from CMB temperature anisotropies(T) and polarization anisotropies(E,B) which traces the behaviour at 400 000 years of cosmic time, as well as from the signals imprinted at later times due to scattering from galaxy clusters, from the motion of electrons ionized, and from gravitationl lensing. FIG 1. shows the full sky temperature anisotropies from Planck experiment(Satillite-based).
 \begin{figure}[h]
 \includegraphics[width=0.8\textwidth]{planck.jpg}
 \caption{The 2018 Planck map of the temeprature anisotropies of the CMB}
 \end{figure}
-
+Ground-based experiments such as Advanced Atacama Cosmology Telescope(AdvACT)\cite{Henderson:2015nzj} and upcoming the Simons Observatory\cite{Ade:2018sbj} can have much better resolution. I am now a member of the both collaborations.
 
 \section{CMB Lensing reconstruction on the curved sky}
 \label{sec:org8852578}
@@ -89,9 +89,15 @@ To obtain lensing potential, we can take quadratic combinations of CMB fields an
 \end{equation}
 
 
-We reconstruct lensing potential and get noise properties for the full sky. This work is meant for improving the existing lensing reconstruction pipline in Advanced Atacama Cosmology Telescope(AdvACT) and Simons Obervatory(SO). This work now only works for the full sky using TT and EB estimators. And its performance is still limited by now, expected to be improved.
+We reconstruct lensing potential and get noise properties for the full sky. This work is meant for improving the existing lensing reconstruction pipline in Advanced Atacama Cosmology Telescope(AdvACT) and Simons Obervatory(SO). This work now only works for the full sky using TT and EB estimators. And its performance is still limited by now as shown in FIG 2,  expected to be improved.
 
-I've learned lensing reconstruction techniques from this work which are applied in the work related lensing reconstruction bias shown in the section 2 below.
+\begin{figure}[h]
+\includegraphics[width=0.8\textwidth]{Dl_phiphi_rec.png}
+\caption{Input Lensing Potential and Reconstrued Lensing Potential}
+\end{figure}
+
+I've learned lensing reconstruction techniques from this work. These techniques are applied in the work shown in the section 2 below.
+
 
 
 \section{Bias to CMB Lensing Reconstruction from Temperature Anisotropies due to Reionization kSZ}
