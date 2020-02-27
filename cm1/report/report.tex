@@ -60,7 +60,7 @@ Ground-based experiments such as Advanced Atacama Cosmology Telescope(AdvACT)\ci
 \label{sec:org8852578}
 
 
-Cosmic Microwave Background(CMB) photons are gravitationlly lensed by the large scale mass distribution. This effect is called CMB lensing. CMB temperature anisotropies(T) and polarization anisotropies(E,B) are distorted by CMB lensing. We can use deflection field or lensing potential to discribe CMB lensing\cite{Lewis:2006fu}. It is expected to amongst the most powerful cosmological tools for ongoing and upcoming CMB experiments which will help find out premordial gravitationl waves, constrain cosmological parameters, constrain neutrino mass and understand the properties of dark energy and . So it is important to reconstruct the CMB lensing according to the oberved CMB temperature and polarization anisotropies. The process of reconstructing lensing potential is called CMB lensing reconstruction.
+Cosmic Microwave Background(CMB) photons are gravitationlly lensed by the large scale mass distribution. This effect is called CMB lensing. CMB temperature anisotropies(T) and polarization anisotropies(E,B) are distorted by CMB lensing. We can use deflection field \(\mathbf{d}(\mathbf{x})\) or lensing potential \(\phi\) as \(\mathbf{d}=\nabla \phi\) to discribe CMB lensing\cite{Lewis:2006fu}. It is expected to amongst the most powerful cosmological tools for ongoing and upcoming CMB experiments which will help find out premordial gravitationl waves, constrain cosmological parameters, constrain neutrino mass and understand the properties of dark energy and . So it is important to reconstruct the CMB lensing according to the oberved CMB temperature and polarization anisotropies. The process of reconstructing lensing potential is called CMB lensing reconstruction.
 
 There are two aspects where we can see CMB lensing effects:
 1.CMB lensing modulates CMB temperature and polarization power spectra(2 point power spectrum). Statistical anisotropy is induced.
@@ -88,6 +88,9 @@ To obtain lensing potential, we can take quadratic combinations of CMB fields an
 \end{array}\right) g_{l_{1} l_{2}}^{\alpha}(L) a_{l_{1}}^{m_{1}} b_{l_{2}}^{m_{2}}
 \end{equation}
 
+\begin{equation}
+  \left.\left\langle d_{L}^{\alpha M}\right\rangle\right|_{\text {lens }}=\sqrt{L(L+1)} \phi_{L}^{M}
+\end{equation}
 
 We reconstruct lensing potential and get noise properties for the full sky. This work is meant for improving the existing lensing reconstruction pipline in Advanced Atacama Cosmology Telescope(AdvACT) and Simons Obervatory(SO). This work now only works for the full sky using TT and EB estimators. And its performance is still limited by now as shown in FIG 2,  expected to be improved.
 
@@ -118,14 +121,18 @@ kSZ anisotropies can be produced when large fluctuation in electron density appe
 
 Simone Ferraro and J. Colin Hill  have investigated the case of ``late time'' kSZ in \cite{Ferraro:2017fac}. Accordin to their results, the bias induced by ``late time'' kSZ to CMB lensing auto-power spectrum measurements can be as large as approximately \(\%1\), \(\%6\), and \(\%8\) for Plank, CMB-S3, and CMB-S4, respectively, when using \(l_{max} = 4000\), and about half of that for \(l_{maxy} = 3000\). Thus, for CMB-S3 and CMB-S4 lensing measurements, the kSZ-induced bias cannot be neglected.
 
-For the case of reionization kSZ, it could also contribute at some level. We are trying to estimate reionization-induced bias to CMB lensing reconstruction from temperature anisotropies based on lensed temperature anisotropies\cite{Stein:2020its} and reionization kSZ map from Ref\cite{Alvarez:2015xzu}. In this study, we apply flat-sky reconstruction pipeline to cutout patchy lensed temperature maps with reionization kSZ and without reionization kSZ given different noise levels, beam sizes and \(l_{max}\). We compare their reconstruction lensing convergence powerspectra and see how much bias the reionization kSZ induces. 
-
 \begin{figure}[h]
 \includegraphics[width=0.8\textwidth]{cross_correlation3.png}
-\caption{Auto-correlation of input lensing convergence, cross-correlation of input lensing convergence and reconstructed lensing convergence with reionization ksz, Cross-correlation of input lensing convergence and reconstructed lensing convergence without reionization ksz, }
+\caption{Auto-correlation of input lensing convergence, cross-correlation of input lensing convergence and reconstructed lensing convergence with reionization kSZ, cross-correlation of input lensing convergence and reconstructed lensing convergence without reionization kSZ, }
 \end{figure}
 
-I am now simulating the bias and trying to understand the bias quantitatively. Since I am now fixing the bugs in this pipeline, the results shown below is not the conclusion. This work is also expected to be helpful for seperating reionization kSZ signals from lensing signals.
+For the case of reionization kSZ, it could also contribute at some level. We are trying to estimate reionization-induced bias to CMB lensing reconstruction from temperature anisotropies based on lensed temperature anisotropies\cite{Stein:2020its} and reionization kSZ map from Ref\cite{Alvarez:2015xzu}. In this study, we apply flat-sky reconstruction pipeline to cutout patchy lensed temperature maps with reionization kSZ and without reionization kSZ. We compare their reconstruction lensing convergence powerspectra and see how much bias the reionization kSZ induces. Lensing convergence is defined as \(\kappa \mathrm=-\frac{1}{2} \nabla \cdot \mathrm{d}\). The FIG 3 shows the preliminary result. Since the cross-correlation of input lensing convergence and reconstructed lensing convergence without reionization kSZ don't overlap well as they should be in the plot, the lensing reconstruction process needs to be corrected. After the correction is done, the next step is to analyze the bias by comparing the cross-correlation. The plan is to see how much bias the reionization kSZ can bring to lensing reconstruction with given different noise levels, beam sizes and \(l_{max}\) and if this bias needs to be considered for CMB-S3 and CMB-S4.
+
+
+
+
+
+
 
 
 
