@@ -1,9 +1,16 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Staggs et~al.(2018)Staggs, Dunkley, and Page]{Staggs:2018gvf}
+Suzanne Staggs, Jo~Dunkley, and Lyman Page.
+\newblock {Recent discoveries from the cosmic microwave background: a review of
+  recent progress}.
+\newblock \emph{Rept. Prog. Phys.}, 81\penalty0 (4):\penalty0 044901, 2018.
+\newblock \doi{10.1088/1361-6633/aa94d5}.
 
 \bibitem[Lewis and Challinor(2006)]{Lewis:2006fu}
 Antony Lewis and Anthony Challinor.

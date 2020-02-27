@@ -4,55 +4,56 @@ The top-level auxiliary file: report.aux
 The style file: unsrtnat.bst
 Database file #1: reportNotes.bib
 Database file #2: references.bib
-Repeated entry---line 95 of file references.bib
+Repeated entry---line 107 of file references.bib
  : @article{Alvarez:2015xzu
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 249 of file references.bib
+Repeated entry---line 261 of file references.bib
  : @article{Okamoto:2003zw
  :                        ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Anastasiou:2003ds"
 Warning--empty journal in Abazajian:2016yjj
 Warning--empty journal in Stein:2020its
-You've used 15 entries,
+You've used 16 entries,
             2481 wiz_defined-function locations,
-            674 strings with 7315 characters,
-and the built_in function-call counts, 5576 in all, are:
-= -- 495
-> -- 239
+            684 strings with 7559 characters,
+and the built_in function-call counts, 5980 in all, are:
+= -- 529
+> -- 260
 < -- 12
-+ -- 96
-- -- 66
-* -- 411
-:= -- 902
-add.period$ -- 58
-call.type$ -- 15
-change.case$ -- 30
-chr.to.int$ -- 15
-cite$ -- 17
-duplicate$ -- 283
-empty$ -- 526
-format.name$ -- 97
-if$ -- 1195
++ -- 104
+- -- 72
+* -- 448
+:= -- 968
+add.period$ -- 62
+call.type$ -- 16
+change.case$ -- 32
+chr.to.int$ -- 16
+cite$ -- 18
+duplicate$ -- 302
+empty$ -- 563
+format.name$ -- 104
+if$ -- 1280
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 15
-newline$ -- 96
-num.names$ -- 45
-pop$ -- 100
+int.to.str$ -- 17
+missing$ -- 16
+newline$ -- 102
+num.names$ -- 48
+pop$ -- 106
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 16
 quote$ -- 0
-skip$ -- 173
+skip$ -- 183
 stack$ -- 0
-substring$ -- 255
-swap$ -- 28
+substring$ -- 275
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 105
+type$ -- 112
 warning$ -- 2
-while$ -- 43
+while$ -- 46
 width$ -- 0
-write$ -- 224
+write$ -- 239
 (There were 2 error messages)
