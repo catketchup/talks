@@ -118,7 +118,13 @@ kSZ anisotropies can be produced when large fluctuation in electron density appe
 
 Simone Ferraro and J. Colin Hill  have investigated the case of ``late time'' kSZ in \cite{Ferraro:2017fac}. Accordin to their results, the bias induced by ``late time'' kSZ to CMB lensing auto-power spectrum measurements can be as large as approximately \(\%1\), \(\%6\), and \(\%8\) for Plank, CMB-S3, and CMB-S4, respectively, when using \(l_{max} = 4000\), and about half of that for \(l_{maxy} = 3000\). Thus, for CMB-S3 and CMB-S4 lensing measurements, the kSZ-induced bias cannot be neglected.
 
-For the case of reionization kSZ, it could also contribute at some level. We are trying to estimate reionization-induced bias to CMB lensing reconstruction from temperature anisotropies based on lensed temperature anisotropies\cite{Stein:2020its} and reionization kSZ map from Ref\cite{Alvarez:2015xzu}. In this study, we apply flat-sky reconstruction pipeline to cutout patchy lensed temperature maps with reionization kSZ and without reionization kSZ given different noise levels, beam sizes and \(l_{max}\). We compare their reconstruction lensing auto-powerspectra and see how much bias the reionization kSZ induces.
+For the case of reionization kSZ, it could also contribute at some level. We are trying to estimate reionization-induced bias to CMB lensing reconstruction from temperature anisotropies based on lensed temperature anisotropies\cite{Stein:2020its} and reionization kSZ map from Ref\cite{Alvarez:2015xzu}. In this study, we apply flat-sky reconstruction pipeline to cutout patchy lensed temperature maps with reionization kSZ and without reionization kSZ given different noise levels, beam sizes and \(l_{max}\). We compare their reconstruction lensing convergence powerspectra and see how much bias the reionization kSZ induces. 
+
+\begin{figure}[h]
+\includegraphics[width=0.8\textwidth]{cross_correlation3.png}
+\caption{Auto-correlation of input lensing convergence, cross-correlation of input lensing convergence and reconstructed lensing convergence with reionization ksz, Cross-correlation of input lensing convergence and reconstructed lensing convergence without reionization ksz, }
+\end{figure}
+
 I am now simulating the bias and trying to understand the bias quantitatively. Since I am now fixing the bugs in this pipeline, the results shown below is not the conclusion. This work is also expected to be helpful for seperating reionization kSZ signals from lensing signals.
 
 
