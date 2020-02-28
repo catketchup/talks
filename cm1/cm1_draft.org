@@ -177,12 +177,12 @@ ksz lensing effect limit
 (p5,p6) Here shows a patch of unlensed CMB temperature map and also a lensed one. You can see the difference between them. 
 (p7) And if you substract an unlensed map from a lensed map, you would see something like this.
 
-(p8)
+(p7)
 So how do we discribe CMB lensing in math? We use deflection field or lensing potential. The deflection map is the gradient of lensing potential. On this side, the maps without telda are lensed maps. On the other side, there are unlensed maps. and the deflection fields are here. 
 According to General Relativity, we are able to express lensing potential as an integral of gravitationl potential over comoving distance from the last scattering surface and here. Make sense?
 
 
-(p9)
+(p8)
 And why we are interested in CMB lensing and why we need to reconstruct it?
 There are several aspects.
 
@@ -193,18 +193,41 @@ There are several aspects.
 The process of reconstructing lensing potential from lensed anisotropies is called lensing reconstruction.
 Make sense?
 
+(p9)
+So how do we do lensing reconstruction? There are two situations: 
+a.for small patch, we are safe to neglect the curvature of the sky and apply flat-sky CMB lensing reconstruction.
+b.for large sky, we need to consider the curvature of the sky and apply curved-sky CMB lensing reconstruction.
+
 (p10)
-So how do we do lensing reconstruction? 
+for flat sky, we apply fourier expansion, and get ... I didn't show the exact expression of the expansion. 
+
+(p11)
+for curved sky, we apply spherical harmonics decomposition and get the multiploe moments
+
+as we can see, for both cases, lensing induces off-dignal terms of 2-pt correlation function, which means lensing changes the statistical property of the cmb maps. That's why we can take advange of this statistical property change to reconstruct CMB lensing. make sense?
+
+In my work, I applied the curved sky estimators
+
+(p12)
+results,explain,simulation! Applied TT estimator and get noise curve of TT and EB estimators
+
+(p13)
+In the journal of CMB photons from last scattering surface to here, besides dark matter which induces lensing, there are also lots of free moving electrons with bulk velocity. These electrons scatter off CMB photons and change the CMB temperature map. This effect is called kSZ effect(kinematic ...)
+
+(p14)
+So for ksz effect, we should know that:1, 2,
+equations, 
+Since the observed temperature map includes ksz's contribution, if we apply lensing reconstruction pipeline, we get bias.
+
+(p15)
+there are two kind of kSZ effects: 1, ... due to the moving electrons of structures. 2. due to moving electrons ionized by the light emitted by the first structures. simulate the contributions on powerspec 
+
+(p16)
 
 
-(p7) Lensing Reconstruction is very important in terms of finding out primordial gravitational waves. Maybe I will explain this later. It reflect the dark matter distribution, cross correlation with other dark matter surveys. It helps cosmological parameters constraints.
-So we have to reconstruct CMB lensing. The process of getting CMB deflection maps and lensing potential from the lensed maps is called CMB lensing potential.
 
-(p8) E,B-modes. Usually we expand the anisotropies into fourier modes, we define the E-mode and B-mode like this. B-mode will play an important role in finding out premordial gravitational waves. Since in real experiment, we often do the expansion on small cut skies. We can neglect the curvature. The temperature map is a spin0 map and the polarization maps are spin2 maps (!!explain). E, B modes! potentail?
-The lensing signal l=100, large scale. so curved sky. B mode, important signature of PGW
 
-(p9) 
-And then we can do the same decomposition of lensed maps. induce off-diagnal terms and modulates 2-pt power
+
 
 (p10)
 apply curved sky estimators
