@@ -159,22 +159,65 @@ ksz lensing effect limit
 1.E B mode image
 2.cosmological parameters constraints
 3.real experiment, unlensed powerspec
+4.names and year
+5.angular scale//
+6.ksz bias to polarization maps
+7.lensing potential and noise
 
 (p1) Hello, My name is Hongbo Cai. I am Dr.Kosowsky's student. This is my first committee meeting. Thank you for being a part of my committee and attending today's meeting. 
 
-(p2) I will give an introduction of my research. There are two parts of my work: the first one is CMB lensing reconstruction on the curved sky; the second one is bias to lensing reconstruction from temperature anisotropies dut to reionization kSZ effect.
+(p2) I have two topics to introduce: the first one is CMB lensing reconstruction on the curved sky; the second one is bias to lensing reconstruction from temperature anisotropies dut to reionization kSZ effect. So my work is around CMB lensing reconstruction. Part 1 is about how to do it. Part 2 is about investigating its bias.
 
-(p3) Let's go to the first section. So for cosmology, what we measure are basically the cosmic microwave background temperature map and polarization maps which reflect the temperature anisotropies and polarization anisotropies.
-This shows a full-sky temperature map from Planck. We can also have polarization maps like this.\theta is for temperature anisotropies, Q and U are stokes parameters for polarization anisotropies. In a word, almost all informaton is encoded in the maps.
+(p3) When we taik about CMB, we are talk 3 maps. \theta for tempature anisotropies, q and u for linear polarization anisotropies. The CMB photons went from the last scattering surface where they decoupled with free electrons all the way to our telescope. We observe them and then we have the 3 maps. Here shows tempature anisotropies of the full sky from planck satellite.
 
-(p4) The photons were from the last scattering suface where photons and free electrons decoupled. In the journal from the last scattering surface to here, the photons were distorted or say deflected by dark matter. Both temperature map and polarization maps are affected. This effect is called CMB lensing. The figure on the right is the difference of lensed and unlensed temperature map, you can see the temperature change. In mathematics, we can use this relation to express the CMB lensing and use a first order expansion. d is deflection field and \phi is lensing potential. According to the general relativity, it is a projection of gravtational potential along the comoving coordinate. Make sense?
 
-(p5,6) Show unlensed map and lensed map
+(p4) What is between the last scattering surface and us? There is much dark matter. It can deflect the CMB photons and distort both the temperature map and polarization maps. This effect is called cmb lensing.
+
+
+(p5,p6) Here shows a patch of unlensed CMB temperature map and also a lensed one. You can see the difference between them. 
+(p7) And if you substract an unlensed map from a lensed map, you would see something like this.
+
+(p8)
+So how do we discribe CMB lensing in math? We use deflection field or lensing potential. The deflection map is the gradient of lensing potential. On this side, the maps without telda are lensed maps. On the other side, there are unlensed maps. and the deflection fields are here. 
+According to General Relativity, we are able to express lensing potential as an integral of gravitationl potential over comoving distance from the last scattering surface and here. Make sense?
+
+
+(p9)
+And why we are interested in CMB lensing and why we need to reconstruct it?
+There are several aspects.
+
+1.It generates B mode which is a signature of PGW. So it is a confusion signal of PGW
+2.It reflects dark matter distribution and we can do cross correlation with other dark matter surveys or galaxy surveys
+3.It helps constrain cosmological parameters
+
+The process of reconstructing lensing potential from lensed anisotropies is called lensing reconstruction.
+Make sense?
+
+(p10)
+So how do we do lensing reconstruction? 
+
 
 (p7) Lensing Reconstruction is very important in terms of finding out primordial gravitational waves. Maybe I will explain this later. It reflect the dark matter distribution, cross correlation with other dark matter surveys. It helps cosmological parameters constraints.
 So we have to reconstruct CMB lensing. The process of getting CMB deflection maps and lensing potential from the lensed maps is called CMB lensing potential.
 
-(p8) Usually we expand the anisotropies into fourier modes, we define the E-mode and B-mode like this. B-mode will play an important role in finding out premordial gravitational waves. Since in real experiment, we often do the expansion on small cut skies. We can neglect the curvature. The temperature map is a spin0 map and the polarization maps are spin2 maps (!!explain) 
+(p8) E,B-modes. Usually we expand the anisotropies into fourier modes, we define the E-mode and B-mode like this. B-mode will play an important role in finding out premordial gravitational waves. Since in real experiment, we often do the expansion on small cut skies. We can neglect the curvature. The temperature map is a spin0 map and the polarization maps are spin2 maps (!!explain). E, B modes! potentail?
+The lensing signal l=100, large scale. so curved sky. B mode, important signature of PGW
 
+(p9) 
+And then we can do the same decomposition of lensed maps. induce off-diagnal terms and modulates 2-pt power
 
+(p10)
+apply curved sky estimators
+
+(p11)
+show result. The performance is still limited especially for small scales.  This work is meant for impoving the existing lensing reconstruction pipeline. And more importantly, I learned useful CMB lensing reconstruction techiques from this project. These techniques are applied in the second part of work.
+
+(p12)
+show ksz image. 
+
+(p13)
+ksz math
+
+(p14)
+two contributions 
 
